@@ -1,13 +1,13 @@
 # Fru Dev - Data Engineering Tutorials
 
-[![Deploy to GitHub Pages](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml)
-[![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-docs-blue)](https://frulouis.github.io/fd-docs)
+[![Deploy to GitHub Pages](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml)
+[![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-labs-blue)](https://frulouis.github.io/fd-labs)
 
 A comprehensive collection of modern data engineering tutorials, focusing on Snowflake, AI/ML, and hands-on projects.
 
 ## 🚀 Live Site
 
-Visit the live site at: **https://frulouis.github.io/fd-docs**
+Visit the live site at: **https://frulouis.github.io/fd-labs**
 
 ## 📚 What You'll Find
 
@@ -36,8 +36,8 @@ Visit the live site at: **https://frulouis.github.io/fd-docs**
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/frulouis/fd-docs.git
-   cd fd-docs
+   git clone https://github.com/frulouis/fd-labs.git
+   cd fd-labs
    ```
 
 2. **Install dependencies**
@@ -72,7 +72,7 @@ mkdocs serve --dev-addr 127.0.0.1:8000
 ## 📁 Project Structure
 
 ```
-fd-docs/
+fd-labs/
 ├── docs/                    # Documentation content
 │   ├── index.md            # Homepage
 │   ├── about.md            # About page
@@ -136,7 +136,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Website**: [https://frulouis.github.io/fd-docs](https://frulouis.github.io/fd-docs)
+- **Website**: [https://frulouis.github.io/fd-labs](https://frulouis.github.io/fd-labs)
 - **GitHub**: [@frulouis](https://github.com/frulouis)
 - **Email**: [contact@frudev.com](mailto:contact@frudev.com)
 

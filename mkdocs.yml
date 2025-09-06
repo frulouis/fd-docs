@@ -4,8 +4,8 @@ site_author: Fru Dev
 site_url: https://fd-tutorials.com
 
 # Repository
-repo_name: fd-docs
-repo_url: https://github.com/frunde/fd-docs
+repo_name: fd-labs
+repo_url: https://github.com/frulouis/fd-labs
 edit_uri: edit/main/docs/
 
 # Configuration
@@ -104,8 +104,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: frunde
-      repo: fd-docs
+      user: frulouis
+      repo: fd-labs
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
