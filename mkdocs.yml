@@ -128,16 +128,38 @@ nav:
   - Home: index.md
   - Getting Started:
     - Installation: getting-started/installation.md
-  - Tutorials:
-    - Snowflake:
-      - Data Quality Metrics: tutorials/snowflake/data-quality-metrics.md
-      - Higher Order Functions: tutorials/snowflake/higher-order-functions.md
-      - Dynamic Tables: tutorials/snowflake/dynamic-tables.md
-    - AI/ML:
-      - Snowpark ML: tutorials/ai-ml/snowpark-ml.md
-      - Embeddings & Vector Search: tutorials/ai-ml/embeddings-vector-search.md
-    - Data Science:
-      - Python Basics: tutorials/data-science/python-basics.md
+  - Common Models:
+    - Data Quality Metrics: tutorials/common-models/data-quality-metrics.md
+    - Higher Order Functions: tutorials/common-models/higher-order-functions.md
+    - Dynamic Tables: tutorials/common-models/dynamic-tables.md
+  - Advanced Warehousing:
+    - Data Classification: tutorials/advanced-warehousing/data-classification.md
+    - ASOF JOIN: tutorials/advanced-warehousing/asof-join.md
+    - Fuzzy Matching: tutorials/advanced-warehousing/fuzzy-matching.md
+  - Engineering / Lake:
+    - Database Change Management: tutorials/engineering-lake/database-change-management.md
+    - Data Lake Architecture: tutorials/engineering-lake/data-lake-architecture.md
+    - ETL Pipelines: tutorials/engineering-lake/etl-pipelines.md
+  - Classic AI/ML:
+    - Snowpark ML: tutorials/classic-ai-ml/snowpark-ml.md
+    - Model Training: tutorials/classic-ai-ml/model-training.md
+    - Feature Engineering: tutorials/classic-ai-ml/feature-engineering.md
+  - Gen AI / LLMs:
+    - Embeddings & Vector Search: tutorials/gen-ai-llms/embeddings-vector-search.md
+    - Cortex AI: tutorials/gen-ai-llms/cortex-ai.md
+    - Document AI: tutorials/gen-ai-llms/document-ai.md
+  - Applications:
+    - Streamlit Apps: tutorials/applications/streamlit-apps.md
+    - Universal Search: tutorials/applications/universal-search.md
+    - Co-Pilot Integration: tutorials/applications/co-pilot-integration.md
+  - Collaboration / Sharing:
+    - Data Sharing: tutorials/collaboration-sharing/data-sharing.md
+    - Marketplace: tutorials/collaboration-sharing/marketplace.md
+    - Cross-Cloud: tutorials/collaboration-sharing/cross-cloud.md
+  - Admins / Ops:
+    - Trust Center: tutorials/admins-ops/trust-center.md
+    - Cost Insights: tutorials/admins-ops/cost-insights.md
+    - Performance Monitoring: tutorials/admins-ops/performance-monitoring.md
 
 # Extra
 extra:

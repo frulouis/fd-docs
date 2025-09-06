@@ -4,29 +4,61 @@ Master modern data engineering with comprehensive Snowflake tutorials, AI/ML gui
 
 <div class="grid cards" markdown>
 
--   :material-snowflake:{ .lg .middle } **Snowflake Mastery**
+-   :material-database:{ .lg .middle } **Common Models**
 
     ---
 
-    Learn advanced Snowflake techniques including data quality, dynamic tables, and higher-order functions.
+    Learn essential Snowflake techniques including data quality, dynamic tables, and higher-order functions.
 
-    [:octicons-arrow-right-24: Explore Snowflake](tutorials/snowflake/data-quality-metrics.md)
+    [:octicons-arrow-right-24: Explore Common Models](tutorials/common-models/data-quality-metrics.md)
 
--   :material-brain:{ .lg .middle } **AI & Machine Learning**
-
-    ---
-
-    Build and deploy ML models with Snowpark ML, implement vector search, and leverage Cortex AI.
-
-    [:octicons-arrow-right-24: Start with AI/ML](tutorials/ai-ml/snowpark-ml.md)
-
--   :material-chart-line:{ .lg .middle } **Data Science**
+-   :material-warehouse:{ .lg .middle } **Advanced Warehousing**
 
     ---
 
-    Master Python for data science, statistical analysis, and data visualization techniques.
+    Master advanced data warehousing with classification, ASOF joins, and fuzzy matching techniques.
 
-    [:octicons-arrow-right-24: Learn Python](tutorials/data-science/python-basics.md)
+    [:octicons-arrow-right-24: Advanced Warehousing](tutorials/advanced-warehousing/data-classification.md)
+
+-   :material-brain:{ .lg .middle } **Classic AI/ML**
+
+    ---
+
+    Build and deploy ML models with Snowpark ML, implement feature engineering, and model training.
+
+    [:octicons-arrow-right-24: Classic AI/ML](tutorials/classic-ai-ml/snowpark-ml.md)
+
+-   :material-robot:{ .lg .middle } **Gen AI / LLMs**
+
+    ---
+
+    Leverage Snowflake Cortex AI for natural language processing, embeddings, and document AI.
+
+    [:octicons-arrow-right-24: Gen AI / LLMs](tutorials/gen-ai-llms/cortex-ai.md)
+
+-   :material-application:{ .lg .middle } **Applications**
+
+    ---
+
+    Build interactive Streamlit apps, implement universal search, and create Co-Pilot integrations.
+
+    [:octicons-arrow-right-24: Applications](tutorials/applications/streamlit-apps.md)
+
+-   :material-share:{ .lg .middle } **Collaboration / Sharing**
+
+    ---
+
+    Share data across organizations, leverage the marketplace, and implement cross-cloud solutions.
+
+    [:octicons-arrow-right-24: Collaboration](tutorials/collaboration-sharing/data-sharing.md)
+
+-   :material-cog:{ .lg .middle } **Admins / Ops**
+
+    ---
+
+    Manage trust center, monitor costs, and optimize performance for your Snowflake environment.
+
+    [:octicons-arrow-right-24: Admins / Ops](tutorials/admins-ops/trust-center.md)
 
 -   :material-rocket-launch:{ .lg .middle } **Getting Started**
 
@@ -48,25 +80,25 @@ Jump into our most popular tutorials and start building with modern data tools:
 
     Master comprehensive data quality monitoring in Snowflake with built-in metrics and custom functions.
 
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/snowflake/data-quality-metrics.md)
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/common-models/data-quality-metrics.md)
 
--   **Snowpark ML** :material-arrow-right:
+-   **Cortex AI** :material-arrow-right:
 
-    Build, train, and deploy machine learning models directly in Snowflake using Snowpark ML.
+    Leverage Snowflake's built-in AI capabilities for NLP, forecasting, and document processing.
 
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/ai-ml/snowpark-ml.md)
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/gen-ai-llms/cortex-ai.md)
 
--   **Vector Search** :material-arrow-right:
+-   **Streamlit Apps** :material-arrow-right:
 
-    Implement semantic search and RAG using Snowflake's vector capabilities and embeddings.
+    Build interactive data applications with Streamlit and Snowflake for visualization and analysis.
 
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/ai-ml/embeddings-vector-search.md)
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/applications/streamlit-apps.md)
 
--   **Dynamic Tables** :material-arrow-right:
+-   **Data Classification** :material-arrow-right:
 
-    Build real-time data pipelines with Snowflake Dynamic Tables for streaming and batch processing.
+    Implement comprehensive data classification and governance in Snowflake with custom policies.
 
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/snowflake/dynamic-tables.md)
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/advanced-warehousing/data-classification.md)
 
 </div>
 
@@ -104,4 +136,4 @@ Jump into our most popular tutorials and start building with modern data tools:
 
 Choose your learning path and begin mastering modern data engineering today.
 
-[:octicons-arrow-right-24: Browse All Tutorials](tutorials/snowflake/data-quality-metrics.md){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: Browse All Tutorials](tutorials/common-models/data-quality-metrics.md){ .md-button .md-button--primary }
