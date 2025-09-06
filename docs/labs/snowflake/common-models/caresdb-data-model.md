@@ -6,7 +6,7 @@ A healthcare-focused data model for Snowflake demos and tutorials, featuring pat
 
 The CaresDB data model provides a realistic healthcare environment for learning Snowflake capabilities including:
 
-![CaresDB Healthcare Architecture](../../assets/images/caresdb-architecture.png)
+![CaresDB Healthcare Architecture](../assets/images/caresdb-architecture.png)
 
 *Figure 1: CaresDB Healthcare Data Model - Complete healthcare database schema showing relationships between Patient, Provider, Facility, and Visit tables*
 - **HIPAA Compliance** - Patient data protection and privacy controls
@@ -93,7 +93,7 @@ CREATE OR REPLACE TABLE Visit (
 
 ## HIPAA Compliance Features
 
-![HIPAA Compliance Workflow](../../assets/images/caresdb-hipaa-compliance.png)
+![HIPAA Compliance Workflow](../assets/images/caresdb-hipaa-compliance.png)
 
 *Figure 2: HIPAA Compliance Workflow - Visual guide showing healthcare data protection and privacy controls*
 

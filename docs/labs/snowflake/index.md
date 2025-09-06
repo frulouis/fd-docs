@@ -22,7 +22,11 @@ Welcome to the comprehensive Snowflake learning lab! This section contains all o
 ### Classic AI/ML
 - [Snowpark ML](classic-ai-ml/snowpark-ml.md) - Machine learning with Snowpark
 
-### 🤝 Collaboration & Sharing
+### Gen AI & LLMs
+- [Cortex AI](gen-ai-llms/cortex-ai.md) - AI-powered analytics
+- [Embeddings & Vector Search](gen-ai-llms/embeddings-vector-search.md) - Vector similarity search
+
+### Collaboration
 - [Overview](collaboration-sharing/index.md) - Share data and collaborate effectively
 
 
@@ -30,9 +34,7 @@ Welcome to the comprehensive Snowflake learning lab! This section contains all o
 ### Data Science
 - [Python Basics](data-science/python-basics.md) - Python fundamentals for Snowflake
 
-### Gen AI & LLMs
-- [Cortex AI](gen-ai-llms/cortex-ai.md) - AI-powered analytics
-- [Embeddings & Vector Search](gen-ai-llms/embeddings-vector-search.md) - Vector similarity search
+
 
 ### Admin Operations
 - [Overview](admins-ops/index.md) - Snowflake administration essentials

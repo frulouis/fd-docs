@@ -6,7 +6,7 @@ An Internet of Things (IoT) focused data model for Snowflake demos and tutorials
 
 The IoTDB data model provides a realistic IoT environment for learning Snowflake capabilities including:
 
-![IoTDB Sensor Network Architecture](../../assets/images/iotdb-architecture.png)
+![IoTDB Sensor Network Architecture](../assets/images/iotdb-architecture.png)
 
 *Figure 1: IoTDB Sensor Network Architecture - Complete IoT database schema showing relationships between Device, Sensor, SensorData, and Alert tables*
 - **Sensor Data Management** - High-volume time-series data handling
