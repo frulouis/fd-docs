@@ -1,4 +1,4 @@
-# Fru Dev - Data Engineering Tutorials
+# Fru Dev Labs (FD Labs) - Data Engineering Tutorials
 
 [![Deploy to GitHub Pages](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml)
 [![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-labs-blue)](https://frulouis.github.io/fd-labs)
@@ -142,4 +142,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Fru Dev** - Empowering developers with knowledge and practical skills for the modern data world.
+**Fru Dev Labs (FD Labs)** - Empowering developers with knowledge and practical skills for the modern data world.

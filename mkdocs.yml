@@ -1,6 +1,6 @@
-site_name: Fru Dev
+site_name: Fru Dev Labs (FD Labs)
 site_description: Comprehensive tutorials and guides for data science, AI, and development
-site_author: Fru Dev
+site_author: Fru Dev Labs
 site_url: https://fd-tutorials.com
 
 # Repository
@@ -142,4 +142,4 @@ extra:
   generator: false
 
 # Copyright
-copyright: Copyright &copy; 2025 Fru Dev
+copyright: Copyright &copy; 2025 Fru Dev Labs
