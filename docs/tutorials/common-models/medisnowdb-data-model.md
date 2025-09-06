@@ -6,7 +6,7 @@ A comprehensive medical data model for Snowflake demos and tutorials, featuring 
 
 The MediSnowDB data model provides a realistic medical environment for learning Snowflake capabilities including:
 
-![MediSnowDB Medical Architecture](../assets/images/medisnowdb-architecture.png)
+![MediSnowDB Medical Architecture](../../assets/images/medisnowdb-architecture.png)
 
 *Figure 1: MediSnowDB Medical Data Model - Complete medical database schema showing relationships between Patient, MedicalRecord, MedicalImage, Drug, and ClinicalTrial tables*
 - **Clinical Data Management** - Patient records and medical history

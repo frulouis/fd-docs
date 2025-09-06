@@ -19,7 +19,7 @@ The SalesDB data model provides a realistic sales environment for learning Snowf
 
 ## Data Model Architecture
 
-![SalesDB Data Model Architecture](../assets/images/salesdb-architecture.png)
+![SalesDB Data Model Architecture](../../../assets/images/salesdb-architecture.png)
 
 *Figure 1: SalesDB Data Model - Complete database schema showing relationships between Customer, Buyer, Client, and Opportunities tables*
 
@@ -85,7 +85,7 @@ CREATE OR REPLACE TABLE Opportunities (
 ### Sample Data with Quality Issues
 The model includes intentionally flawed data to demonstrate data quality monitoring:
 
-![Data Quality Issues Dashboard](../assets/images/salesdb-data-quality.png)
+![Data Quality Issues Dashboard](../../assets/images/salesdb-data-quality.png)
 
 *Figure 2: Data Quality Dashboard - Visual representation of data quality issues including invalid emails, missing values, and duplicate data*
 
@@ -129,7 +129,7 @@ ALTER TABLE Customer MODIFY COLUMN LastName SET TAG PII = 'Name';
 ALTER TABLE Customer MODIFY COLUMN Email SET TAG PII = 'Email';
 ```
 
-![PII Tagging Implementation](../assets/images/salesdb-pii-tagging.png)
+![PII Tagging Implementation](../../assets/images/salesdb-pii-tagging.png)
 
 *Figure 3: PII Tagging Implementation - Visual guide showing how to apply PII tags to sensitive data columns*
 
@@ -159,7 +159,7 @@ CREATE OR REPLACE MASKING POLICY mask_pii AS (val string) RETURNS string ->
 ALTER TAG PII SET MASKING POLICY mask_pii;
 ```
 
-![Data Masking Policy Flow](../assets/images/salesdb-masking-policy.png)
+![Data Masking Policy Flow](../../assets/images/salesdb-masking-policy.png)
 
 *Figure 4: Data Masking Policy Flow - Diagram showing how masking policies work with different user roles*
 
@@ -240,7 +240,7 @@ WHERE SalesStage IN ('Negotiation', 'Proposal')
 AND ExpectedCloseDate BETWEEN CURRENT_DATE AND DATEADD(month, 1, CURRENT_DATE);
 ```
 
-![Sales Analytics Dashboard](../assets/images/salesdb-analytics-dashboard.png)
+![Sales Analytics Dashboard](../../assets/images/salesdb-analytics-dashboard.png)
 
 *Figure 5: Sales Analytics Dashboard - Visual representation of high-value customers and opportunities analysis*
 
@@ -265,7 +265,7 @@ GRANT SELECT ON TABLE Customer TO ROLE SalesRep;
 GRANT SELECT ON ALL TABLES IN SCHEMA customer TO ROLE SalesManager;
 ```
 
-![RBAC Architecture Diagram](../assets/images/salesdb-rbac-architecture.png)
+![RBAC Architecture Diagram](../../assets/images/salesdb-rbac-architecture.png)
 
 *Figure 6: RBAC Architecture - Diagram showing role-based access control implementation for different user types*
 

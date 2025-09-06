@@ -131,15 +131,15 @@ nav:
   - Home: index.md
   - Getting Started:
     - Installation: getting-started/installation.md
-          - Common Models:
-            - Data Quality Metrics: tutorials/common-models/data-quality-metrics.md
-            - Higher Order Functions: tutorials/common-models/higher-order-functions.md
-            - Dynamic Tables: tutorials/common-models/dynamic-tables.md
-            - SalesDB Data Model: tutorials/common-models/salesdb-data-model.md
-            - CaresDB Data Model: tutorials/common-models/caresdb-data-model.md
-            - OrdersDB Data Model: tutorials/common-models/ordersdb-data-model.md
-            - IoTDB Data Model: tutorials/common-models/iotdb-data-model.md
-            - MediSnowDB Data Model: tutorials/common-models/medisnowdb-data-model.md
+  - Common Models:
+    - Data Quality Metrics: tutorials/common-models/data-quality-metrics.md
+    - Higher Order Functions: tutorials/common-models/higher-order-functions.md
+    - Dynamic Tables: tutorials/common-models/dynamic-tables.md
+    - SalesDB Data Model: tutorials/common-models/salesdb-data-model.md
+    - CaresDB Data Model: tutorials/common-models/caresdb-data-model.md
+    - OrdersDB Data Model: tutorials/common-models/ordersdb-data-model.md
+    - IoTDB Data Model: tutorials/common-models/iotdb-data-model.md
+    - MediSnowDB Data Model: tutorials/common-models/medisnowdb-data-model.md
   - Advanced Warehousing:
     - Data Classification: tutorials/advanced-warehousing/data-classification.md
     - ASOF JOIN: tutorials/advanced-warehousing/asof-join.md

@@ -6,7 +6,7 @@ An e-commerce focused data model for Snowflake demos and tutorials, featuring cu
 
 The OrdersDB data model provides a realistic e-commerce environment for learning Snowflake capabilities including:
 
-![OrdersDB E-commerce Architecture](../assets/images/ordersdb-architecture.png)
+![OrdersDB E-commerce Architecture](../../assets/images/ordersdb-architecture.png)
 
 *Figure 1: OrdersDB E-commerce Data Model - Complete e-commerce database schema showing relationships between Customer, Product, Order, and Inventory tables*
 - **Retail Analytics** - Sales performance and customer behavior analysis
