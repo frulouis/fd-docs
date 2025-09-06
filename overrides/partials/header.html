@@ -1,81 +1,61 @@
-<!-- Custom header with hero section -->
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header.title') }}">
-    <a href="{{ config.site_url | default(nav.homepage.url, true) | url }}" title="{{ config.site_name }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+<!-- Custom top menu bar -->
+<nav class="md-header__inner md-grid" aria-label="{{ lang.t('header.title') }}">
+  <div class="md-header__title">
+    <a href="{{ config.site_url | default(nav.homepage.url, true) | url }}" title="{{ config.site_name }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}">
       {% include "partials/logo.html" %}
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      {% include ".icons/material/menu" ~ ".svg" %}
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            {{ config.site_name }}
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            {% if page and page.meta and page.meta.title %}
-              {{ page.meta.title }}
-            {% else %}
-              {{ page.title }}
-            {% endif %}
-          </span>
-        </div>
-      </div>
+  </div>
+  
+  <!-- Custom top menu -->
+  <div class="md-header__top-menu">
+    <nav class="md-header__top-nav" aria-label="Top navigation">
+      <a href="{{ nav.homepage.url | url }}" class="md-header__top-link">Home</a>
+      <a href="{{ 'about' | url }}" class="md-header__top-link">About</a>
+      <a href="{{ 'tutorials/common-models/salesdb-data-model' | url }}" class="md-header__top-link">Tutorials</a>
+      <a href="{{ 'blog' | url }}" class="md-header__top-link">Blog</a>
+      <a href="{{ 'subscribe' | url }}" class="md-header__top-link">Subscribe</a>
+      <a href="{{ 'community' | url }}" class="md-header__top-link">Community</a>
+    </nav>
+  </div>
+
+  <!-- Search box -->
+  {% if "search" in config["plugins"] %}
+    <div class="md-header__search">
+      {% include "partials/search.html" %}
     </div>
+  {% endif %}
+
+  <!-- Right side menu -->
+  <div class="md-header__right">
     {% if config.extra.alternate %}
-      <div class="md-header__option">
-        <div class="md-select">
-          {% set icon = config.theme.icon.alternate or "material/translate" %}
-          <button class="md-header__button md-icon" aria-label="{{ lang.t('select.language.title') }}">
-            {% include ".icons/" ~ icon ~ ".svg" %}
-          </button>
-          <div class="md-select__inner">
-            <ul class="md-select__list">
-              {% for alt in config.extra.alternate %}
-                <li class="md-select__item">
-                  <a href="{{ alt.link | url }}" class="md-select__link">
-                    {{ alt.name }}
-                  </a>
-                </li>
-                {% endfor %}
-            </ul>
-          </div>
-        </div>
+      <div class="md-header__lang">
+        {% include "partials/languages.html" %}
       </div>
     {% endif %}
-    {% if "search" in config["plugins"] %}
-      <label class="md-header__button md-icon" for="__search">
-        {% include ".icons/material/magnify" ~ ".svg" %}
-      </label>
-      {% include "partials/search.html" %}
+    {% if not config.theme.palette is mapping %}
+      <div class="md-header__palette">
+        {% if not config.theme.palette.scheme %}
+          {% set scheme = config.theme.palette.primary | replace(" ", "-") | lower %}
+        {% else %}
+          {% set scheme = config.theme.palette.scheme %}
+        {% endif %}
+        <button class="md-header__button md-icon" title="Switch to dark mode" onclick="__md_scope.setColorScheme('{{ scheme }}')">
+          {% include ".icons/material/brightness-7.svg" %}
+        </button>
+      </div>
     {% endif %}
     {% if config.repo_url %}
       <div class="md-header__source">
-        {% include "partials/source.html" %}
+        <a href="{{ config.repo_url }}" title="Go to source repository" class="md-source" data-md-component="source">
+          <div class="md-source__icon md-icon">
+            {% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </div>
+          <div class="md-source__repository">
+            {{ config.repo_name }}
+          </div>
+        </a>
       </div>
     {% endif %}
-  </nav>
-</header>
-
-<!-- Hero section for homepage -->
-{% if page and page.is_homepage %}
-<div class="hero">
-  <div class="md-grid">
-    <div class="md-content__inner">
-      <h1>{{ config.site_name }}</h1>
-      <p>{{ config.site_description }}</p>
-      <div class="hero__buttons">
-        <a href="{{ 'getting-started/installation' | url }}" class="md-button md-button--primary">
-          Get Started
-        </a>
-        <a href="{{ 'tutorials/data-science/python-basics' | url }}" class="md-button">
-          Browse Tutorials
-        </a>
-      </div>
-    </div>
   </div>
-</div>
-{% endif %}
+</nav>

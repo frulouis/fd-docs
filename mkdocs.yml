@@ -126,6 +126,10 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - About: about.md
+  - Blog: blog.md
+  - Subscribe: subscribe.md
+  - Community: community.md
   - Getting Started:
     - Installation: getting-started/installation.md
   - Common Models:
