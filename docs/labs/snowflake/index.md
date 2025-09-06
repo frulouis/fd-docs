@@ -36,6 +36,9 @@ Welcome to the comprehensive Snowflake learning lab! This section contains all o
 - [Cortex AI](gen-ai-llms/cortex-ai.md) - AI-powered analytics
 - [Embeddings & Vector Search](gen-ai-llms/embeddings-vector-search.md) - Vector similarity search
 
+### 📚 Resources
+- [Snowflake Resources](resources.md) - Official links, community, documentation, and learning materials
+
 ## 🎯 Getting Started
 
 New to Snowflake? Start with these essential topics:
