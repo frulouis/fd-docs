@@ -2,11 +2,11 @@
 
 /* Custom top menu bar styling */
 .md-header__top-menu {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .md-header__top-nav {
@@ -37,8 +37,15 @@
   outline-offset: 2px;
 }
 
+/* Ensure search is visible */
+.md-header__search {
+  display: block !important;
+  flex-shrink: 0;
+}
+
 /* Header layout adjustments */
 .md-header__inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,10 +60,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  flex-shrink: 0;
-}
-
-.md-header__search {
   flex-shrink: 0;
 }
 

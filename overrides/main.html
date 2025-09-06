@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+  {{ super() }}
+  
+  <!-- Custom top menu bar -->
+  <div class="md-header__top-menu">
+    <nav class="md-header__top-nav" aria-label="Top navigation">
+      <a href="{{ nav.homepage.url | url }}" class="md-header__top-link">Home</a>
+      <a href="{{ 'about' | url }}" class="md-header__top-link">About</a>
+      <a href="{{ 'tutorials/common-models/salesdb-data-model' | url }}" class="md-header__top-link">Tutorials</a>
+      <a href="{{ 'blog' | url }}" class="md-header__top-link">Blog</a>
+      <a href="{{ 'subscribe' | url }}" class="md-header__top-link">Subscribe</a>
+      <a href="{{ 'community' | url }}" class="md-header__top-link">Community</a>
+    </nav>
+  </div>
+{% endblock %}

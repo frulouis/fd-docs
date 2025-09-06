@@ -19,7 +19,7 @@ The SalesDB data model provides a realistic sales environment for learning Snowf
 
 ## Data Model Architecture
 
-![SalesDB Data Model Architecture](../../../assets/images/salesdb-architecture.png)
+![SalesDB Data Model Architecture](../../assets/images/salesdb-architecture.png)
 
 *Figure 1: SalesDB Data Model - Complete database schema showing relationships between Customer, Buyer, Client, and Opportunities tables*
 
