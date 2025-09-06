@@ -1,8 +1,8 @@
-# ❄️ Snowflake Tutorials
+# ❄️ Snowflake Labs
 
-Welcome to the comprehensive Snowflake learning hub! This section contains all our Snowflake-related tutorials, guides, and best practices.
+Welcome to the comprehensive Snowflake learning lab! This section contains all our Snowflake-related experiments, guides, and best practices.
 
-## 📚 Tutorial Categories
+## 📚 Lab Categories
 
 ### 🔧 Admin Operations
 - [Overview](admins-ops/index.md) - Snowflake administration essentials
@@ -52,4 +52,4 @@ New to Snowflake? Start with these essential topics:
 
 ---
 
-*Explore our comprehensive Snowflake tutorials to master data warehousing, analytics, and AI capabilities!*
+*Explore our comprehensive Snowflake labs to master data warehousing, analytics, and AI capabilities!*

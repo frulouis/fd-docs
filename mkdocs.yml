@@ -130,35 +130,10 @@ nav:
   - Blog: blog.md
   - Subscribe: subscribe.md
   - Community: community.md
-  - Tutorials:
-    - 🛠️ Dev Tools:
-      - Cursor IDE: tutorials/dev-tools/cursor-ide.md
-      - SliDev: tutorials/dev-tools/slidev.md
-      - VS Code: tutorials/dev-tools/vscode.md
-      - GitHub Copilot: tutorials/dev-tools/github-copilot.md
-      - Terminal & CLI: tutorials/dev-tools/terminal-cli.md
-    - ❄️ Snowflake: tutorials/snowflake/index.md
-    - 🐍 Python & Data:
-      - Python Fundamentals: tutorials/python-data/python-fundamentals.md
-      - Data Analysis: tutorials/python-data/data-analysis.md
-      - Machine Learning: tutorials/python-data/machine-learning.md
-      - Data Visualization: tutorials/python-data/data-visualization.md
-    - ☁️ Cloud & Infrastructure:
-      - AWS: tutorials/cloud-infrastructure/aws.md
-      - Azure: tutorials/cloud-infrastructure/azure.md
-      - GCP: tutorials/cloud-infrastructure/gcp.md
-      - Docker: tutorials/cloud-infrastructure/docker.md
-      - Kubernetes: tutorials/cloud-infrastructure/kubernetes.md
-    - 🤖 AI & Machine Learning:
-      - LLMs & GPT: tutorials/ai-ml/llms-gpt.md
-      - Vector Databases: tutorials/ai-ml/vector-databases.md
-      - MLOps: tutorials/ai-ml/mlops.md
-      - Computer Vision: tutorials/ai-ml/computer-vision.md
-    - 🌐 Web Development:
-      - Frontend: tutorials/web-dev/frontend.md
-      - Backend: tutorials/web-dev/backend.md
-      - Full Stack: tutorials/web-dev/full-stack.md
-      - APIs: tutorials/web-dev/apis.md
+  - Labs:
+    - ❄️ Snowflake: labs/snowflake/index.md
+    - 🛠️ Dev Tools: labs/dev-tools/index.md
+    - 💡 Thought Leadership: labs/thought-leadership/index.md
 
 # Extra
 extra:
