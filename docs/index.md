@@ -1,80 +1,107 @@
 # Welcome to Fru Dev
 
+Master modern data engineering with comprehensive Snowflake tutorials, AI/ML guides, and hands-on projects.
+
 <div class="grid cards" markdown>
+
+-   :material-snowflake:{ .lg .middle } **Snowflake Mastery**
+
+    ---
+
+    Learn advanced Snowflake techniques including data quality, dynamic tables, and higher-order functions.
+
+    [:octicons-arrow-right-24: Explore Snowflake](tutorials/snowflake/data-quality-metrics.md)
+
+-   :material-brain:{ .lg .middle } **AI & Machine Learning**
+
+    ---
+
+    Build and deploy ML models with Snowpark ML, implement vector search, and leverage Cortex AI.
+
+    [:octicons-arrow-right-24: Start with AI/ML](tutorials/ai-ml/snowpark-ml.md)
+
+-   :material-chart-line:{ .lg .middle } **Data Science**
+
+    ---
+
+    Master Python for data science, statistical analysis, and data visualization techniques.
+
+    [:octicons-arrow-right-24: Learn Python](tutorials/data-science/python-basics.md)
 
 -   :material-rocket-launch:{ .lg .middle } **Getting Started**
 
     ---
 
-    New to our tutorials? Start here for a quick introduction and setup guide.
+    New to our platform? Start here for installation guides and quick setup instructions.
 
-    [:octicons-arrow-right-24: Getting Started](getting-started/installation.md)
-
--   :material-book-open:{ .lg .middle } **Tutorials**
-
-    ---
-
-    Comprehensive step-by-step tutorials covering data science, AI, and development.
-
-    [:octicons-arrow-right-24: Browse Tutorials](tutorials/data-science/python-basics.md)
-
--   :material-lightbulb:{ .lg .middle } **Guides**
-
-    ---
-
-    Best practices, troubleshooting, and advanced techniques.
-
-    [:octicons-arrow-right-24: Coming Soon](#)
-
--   :material-help-circle:{ .lg .middle } **Reference**
-
-    ---
-
-    API documentation, glossary, and technical references.
-
-    [:octicons-arrow-right-24: Coming Soon](#)
+    [:octicons-arrow-right-24: Get Started](getting-started/installation.md)
 
 </div>
 
-## What You'll Learn
+## Featured Tutorials
 
-Our tutorials cover comprehensive topics in modern data engineering, AI/ML, and Snowflake development:
+Jump into our most popular tutorials and start building with modern data tools:
 
-### Snowflake & Data Engineering
-- **Data Quality Metrics**: Implement comprehensive data quality monitoring
-- **Higher Order Functions**: Master advanced array and object transformations
-- **Dynamic Tables**: Build real-time data pipelines
-- **Database Change Management**: Version control and deployment strategies
+<div class="grid cards" markdown>
 
-### AI & Machine Learning
-- **Snowpark ML**: Build and deploy ML models in Snowflake
-- **Cortex AI**: Leverage Snowflake's built-in ML capabilities
-- **Embeddings & Vector Search**: Implement semantic search and RAG
-- **Document AI**: Extract insights from unstructured data
+-   **Data Quality Metrics** :material-arrow-right:
 
-### Data Science & Analytics
-- **Python Fundamentals**: Master data science with Python
-- **Advanced Analytics**: Statistical analysis and forecasting
-- **Data Visualization**: Create compelling data stories
-- **Performance Optimization**: Scale your data operations
+    Master comprehensive data quality monitoring in Snowflake with built-in metrics and custom functions.
 
-## Getting Started
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/snowflake/data-quality-metrics.md)
 
-Ready to dive in? Here's how to get started:
+-   **Snowpark ML** :material-arrow-right:
 
-1. **Choose Your Path**: Browse our tutorials and pick what interests you most
-2. **Follow Along**: Each tutorial includes code examples and exercises
-3. **Practice**: Apply what you learn with hands-on projects
-4. **Contribute**: Share your knowledge and help others learn
+    Build, train, and deploy machine learning models directly in Snowflake using Snowpark ML.
 
-## Community
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/ai-ml/snowpark-ml.md)
 
-Join our community of learners and developers:
+-   **Vector Search** :material-arrow-right:
 
-- :material-github: [GitHub](https://github.com/frunde/fd-docs) - Source code and issues
-- :material-twitter: [Twitter](https://twitter.com/frunde) - Updates and discussions
-- :material-linkedin: [LinkedIn](https://linkedin.com/in/frunde) - Professional networking
+    Implement semantic search and RAG using Snowflake's vector capabilities and embeddings.
 
----
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/ai-ml/embeddings-vector-search.md)
 
-*Happy learning! 🚀*
+-   **Dynamic Tables** :material-arrow-right:
+
+    Build real-time data pipelines with Snowflake Dynamic Tables for streaming and batch processing.
+
+    [:octicons-arrow-right-24: Read Tutorial](tutorials/snowflake/dynamic-tables.md)
+
+</div>
+
+## Why Choose Fru Dev?
+
+<div class="grid cards" markdown>
+
+-   :material-code-tags:{ .lg .middle } **Hands-on Learning**
+
+    ---
+
+    Every tutorial includes practical code examples, real-world projects, and step-by-step guidance.
+
+-   :material-update:{ .lg .middle } **Always Current**
+
+    ---
+
+    Our content stays up-to-date with the latest Snowflake features and modern data engineering practices.
+
+-   :material-account-group:{ .lg .middle } **Community Driven**
+
+    ---
+
+    Join a growing community of data professionals sharing knowledge and best practices.
+
+-   :material-rocket:{ .lg .middle } **Production Ready**
+
+    ---
+
+    Learn techniques you can immediately apply in your professional data engineering projects.
+
+</div>
+
+## Ready to Start?
+
+Choose your learning path and begin mastering modern data engineering today.
+
+[:octicons-arrow-right-24: Browse All Tutorials](tutorials/snowflake/data-quality-metrics.md){ .md-button .md-button--primary }
