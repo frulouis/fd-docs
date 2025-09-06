@@ -6,13 +6,13 @@ Master modern data engineering with comprehensive Snowflake tutorials, AI/ML gui
 
 <div class="grid cards" markdown>
 
--   :material-database:{ .lg .middle } **[Common Models](tutorials/common-models/data-quality-metrics.md)**
+-   :material-database:{ .lg .middle } **[Common Models](tutorials/common-models/salesdb-data-model.md)**
 
     ---
 
     Learn essential Snowflake techniques including data quality, dynamic tables, and higher-order functions.
 
--   :material-warehouse:{ .lg .middle } **[Advanced Warehousing](tutorials/advanced-warehousing/data-classification.md)**
+-   :material-warehouse:{ .lg .middle } **[Advanced Warehousing](tutorials/advanced-warehousing/data-quality-metrics.md)**
 
     ---
 
@@ -36,13 +36,13 @@ Master modern data engineering with comprehensive Snowflake tutorials, AI/ML gui
 
     Build interactive Streamlit apps, implement universal search, and create Co-Pilot integrations.
 
--   :material-share:{ .lg .middle } **[Collaboration / Sharing](tutorials/collaboration-sharing/data-sharing.md)**
+-   :material-share:{ .lg .middle } **[Collaboration / Sharing](tutorials/collaboration-sharing/index.md)**
 
     ---
 
     Share data across organizations, leverage the marketplace, and implement cross-cloud solutions.
 
--   :material-cog:{ .lg .middle } **[Admins / Ops](tutorials/admins-ops/trust-center.md)**
+-   :material-cog:{ .lg .middle } **[Admins / Ops](tutorials/admins-ops/index.md)**
 
     ---
 
@@ -61,7 +61,7 @@ Master modern data engineering with comprehensive Snowflake tutorials, AI/ML gui
 
 Choose your learning path and begin mastering modern data engineering today.
 
-[:octicons-arrow-right-24: Browse All Tutorials](tutorials/common-models/data-quality-metrics.md){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: Browse All Tutorials](tutorials/common-models/salesdb-data-model.md){ .md-button .md-button--primary }
 
 ---
 

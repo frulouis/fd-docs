@@ -32,6 +32,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - search
     - search.highlight
     - search.share
     - search.suggest
@@ -70,11 +71,7 @@ theme:
 
 # Plugins
 plugins:
-  - search:
-      lang: en
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+'
-      min_search_length: 2
-      prebuild_index: true
+  - search
   - minify:
       minify_html: true
 
@@ -132,15 +129,15 @@ nav:
   - Getting Started:
     - Installation: getting-started/installation.md
   - Common Models:
-    - Data Quality Metrics: tutorials/common-models/data-quality-metrics.md
-    - Higher Order Functions: tutorials/common-models/higher-order-functions.md
-    - Dynamic Tables: tutorials/common-models/dynamic-tables.md
     - SalesDB Data Model: tutorials/common-models/salesdb-data-model.md
     - CaresDB Data Model: tutorials/common-models/caresdb-data-model.md
     - OrdersDB Data Model: tutorials/common-models/ordersdb-data-model.md
     - IoTDB Data Model: tutorials/common-models/iotdb-data-model.md
     - MediSnowDB Data Model: tutorials/common-models/medisnowdb-data-model.md
   - Advanced Warehousing:
+    - Data Quality Metrics: tutorials/advanced-warehousing/data-quality-metrics.md
+    - Higher Order Functions: tutorials/advanced-warehousing/higher-order-functions.md
+    - Dynamic Tables: tutorials/advanced-warehousing/dynamic-tables.md
     - Data Classification: tutorials/advanced-warehousing/data-classification.md
     - ASOF JOIN: tutorials/advanced-warehousing/asof-join.md
     - Fuzzy Matching: tutorials/advanced-warehousing/fuzzy-matching.md
