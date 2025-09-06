@@ -9155,3 +9155,15 @@ The site is now much cleaner and focused on the core pages you want to keep!
 
 ---
 
+_**User (2025-09-06 00:46Z)**_
+
+create and push this to a public github repo
+
+---
+
+_**Assistant**_
+
+
+
+---
+

@@ -1,195 +1,145 @@
-# Fru Dev
+# Fru Dev - Data Engineering Tutorials
 
-A comprehensive tutorial site built with Material for MkDocs, inspired by madewithml.com. This site provides step-by-step tutorials for data science, AI, and development topics.
+[![Deploy to GitHub Pages](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml)
+[![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-docs-blue)](https://frulouis.github.io/fd-docs)
 
-## Features
+A comprehensive collection of modern data engineering tutorials, focusing on Snowflake, AI/ML, and hands-on projects.
 
-- 🎨 **Modern Design**: Clean, responsive Material Design theme
-- 📚 **Comprehensive Content**: Tutorials covering data science, AI, and development
-- 🔍 **Advanced Search**: Full-text search with instant suggestions
-- 📱 **Mobile Friendly**: Responsive design that works on all devices
-- 🌙 **Dark Mode**: Automatic dark/light mode switching
-- ⚡ **Fast Loading**: Optimized for performance
-- 🔧 **Easy Customization**: Simple configuration and theming
+## 🚀 Live Site
 
-## Quick Start
+Visit the live site at: **https://frulouis.github.io/fd-docs**
+
+## 📚 What You'll Find
+
+- **Getting Started** - Installation guides and quick setup
+- **About** - Our mission and approach to data engineering education
+- **Blog** - Community insights and technical deep dives
+- **Community** - Guidelines and platforms for collaboration
+- **Subscribe** - Newsletter for latest updates
+
+## 🛠️ Technology Stack
+
+- **MkDocs** - Static site generator
+- **Material for MkDocs** - Modern documentation theme
+- **Python** - Backend and automation scripts
+- **GitHub Pages** - Hosting and deployment
+- **GitHub Actions** - CI/CD pipeline
+
+## 🏗️ Local Development
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- Git
+- Python 3.12+
+- pip or uv package manager
 
-### Installation
+### Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/frunde/fd-docs.git
+   git clone https://github.com/frulouis/fd-docs.git
    cd fd-docs
    ```
 
-2. **Set up virtual environment**
+2. **Install dependencies**
    ```bash
-   # Using uv (recommended)
-   uv venv fd-tutorials-env
-   source fd-tutorials-env/bin/activate  # On Windows: fd-tutorials-env\Scripts\activate
-   
-   # Or using venv
-   python -m venv fd-tutorials-env
-   source fd-tutorials-env/bin/activate  # On Windows: fd-tutorials-env\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   # Using uv (faster)
-   uv pip install -r requirements.txt
-   
-   # Or using pip
+   # Using pip
    pip install -r requirements.txt
+   
+   # Or using uv (recommended)
+   uv sync
    ```
 
-4. **Start development server**
+3. **Start development server**
    ```bash
    mkdocs serve
    ```
 
-5. **Open your browser**
-   Navigate to `http://localhost:8000` to view the site.
+4. **Open in browser**
+   ```
+   http://127.0.0.1:8000
+   ```
 
-## Project Structure
+### Building
+
+```bash
+# Build static site
+mkdocs build
+
+# Build and serve
+mkdocs serve --dev-addr 127.0.0.1:8000
+```
+
+## 📁 Project Structure
 
 ```
 fd-docs/
-├── assets/                 # Static assets (images, videos, etc.)
-├── configs/               # Configuration files
-├── data/                  # Data files and databases
-├── docs/                  # Documentation source files
-│   ├── getting-started/   # Getting started guides
-│   ├── tutorials/         # Tutorial content
-│   │   ├── data-science/  # Data science tutorials
-│   │   ├── ai-ml/         # AI/ML tutorials
-│   │   └── development/   # Development tutorials
-│   ├── guides/            # Best practices and guides
-│   └── reference/         # API reference and glossary
-├── src/                   # Source code
-│   ├── tests/             # Test files
-│   ├── utilities/         # Utility functions
-│   ├── pipelines/         # Data processing pipelines
-│   └── mcp/               # MCP server code
-├── overrides/             # Custom theme overrides
+├── docs/                    # Documentation content
+│   ├── index.md            # Homepage
+│   ├── about.md            # About page
+│   ├── blog.md             # Blog page
+│   ├── subscribe.md        # Newsletter subscription
+│   ├── community.md        # Community guidelines
+│   ├── getting-started/    # Getting started guides
+│   ├── tutorials/          # Tutorial content
+│   └── assets/             # Images and static assets
+├── overrides/              # Custom theme overrides
 │   ├── css/               # Custom CSS
-│   └── partials/          # Custom HTML partials
-├── mkdocs.yml             # MkDocs configuration
-├── pyproject.toml         # Python project configuration
-├── requirements.txt       # Python dependencies
-└── README.md              # This file
+│   └── main.html          # Template overrides
+├── scripts/               # Automation scripts
+├── .github/workflows/     # GitHub Actions
+├── mkdocs.yml            # MkDocs configuration
+└── requirements.txt      # Python dependencies
 ```
 
-## Configuration
+## 🎨 Customization
 
-The site is configured through `mkdocs.yml`. Key configuration options:
+### Theme Customization
 
-- **Theme**: Material for MkDocs with custom styling
-- **Navigation**: Hierarchical navigation structure
-- **Plugins**: Search, git integration, minification
-- **Extensions**: Enhanced markdown features
+- **CSS**: Edit `overrides/css/extra.css`
+- **Templates**: Modify `overrides/main.html`
+- **Configuration**: Update `mkdocs.yml`
 
-## Customization
+### Adding Content
 
-### Adding New Tutorials
+1. **New Pages**: Add `.md` files to `docs/`
+2. **Navigation**: Update `nav` section in `mkdocs.yml`
+3. **Images**: Place in `docs/assets/images/`
+4. **Styling**: Modify CSS in `overrides/css/`
 
-1. Create a new markdown file in the appropriate directory under `docs/tutorials/`
-2. Add the tutorial to the navigation in `mkdocs.yml`
-3. Use the existing tutorial templates as a guide
+## 🤝 Contributing
 
-### Styling
+We welcome contributions! Here's how to get started:
 
-- Custom CSS: `overrides/css/extra.css`
-- Custom HTML: `overrides/partials/`
-- Theme configuration: `mkdocs.yml` under `theme:`
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
 
-### Content Structure
+### Development Guidelines
 
-Each tutorial should include:
-- Clear learning objectives
-- Prerequisites
-- Step-by-step instructions
-- Code examples
-- Exercises
-- Next steps
+- Follow [PEP 8](https://pep8.org/) for Python code
+- Use clear, descriptive commit messages
+- Test changes locally before submitting
+- Update documentation for new features
 
-## Development
-
-### Running Tests
-
-```bash
-pytest
-```
-
-### Code Formatting
-
-```bash
-# Format code
-black src/
-isort src/
-
-# Check code quality
-flake8 src/
-mypy src/
-```
-
-### Building for Production
-
-```bash
-mkdocs build
-```
-
-The built site will be in the `site/` directory.
-
-## Deployment
-
-### GitHub Pages
-
-1. Enable GitHub Pages in repository settings
-2. Set source to GitHub Actions
-3. Push changes to trigger deployment
-
-### Other Hosting
-
-1. Build the site: `mkdocs build`
-2. Upload the `site/` directory to your hosting provider
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](docs/guides/contributing.md) for details.
-
-### Development Workflow
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for the excellent theme
-- [Made With ML](https://madewithml.com/) for inspiration
-- The open-source community for amazing tools and libraries
+- [MkDocs](https://www.mkdocs.org/) - Static site generator
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Documentation theme
+- [GitHub Pages](https://pages.github.com/) - Hosting platform
+- Community contributors and feedback
 
-## Support
+## 📞 Contact
 
-- 📖 [Documentation](https://fd-tutorials.com)
-- 🐛 [Issues](https://github.com/frunde/fd-docs/issues)
-- 💬 [Discussions](https://github.com/frunde/fd-docs/discussions)
-
----
-
-**Happy Learning! 🚀**
+- **Website**: [https://frulouis.github.io/fd-docs](https://frulouis.github.io/fd-docs)
+- **GitHub**: [@frulouis](https://github.com/frulouis)
+- **Email**: [contact@frudev.com](mailto:contact@frudev.com)
 
 ---
 
-*Built with ❤️ by Fru Dev*
+**Fru Dev** - Empowering developers with knowledge and practical skills for the modern data world.
