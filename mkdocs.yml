@@ -133,10 +133,7 @@ nav:
   - Blog: blog.md
   - Subscribe: subscribe.md
   - Community: community.md
-  - Labs:
-    - ❄️ Snowflake: labs/snowflake/index.md
-    - 🛠️ Dev Tools: labs/dev-tools/index.md
-    - 💡 Thought Leadership: labs/thought-leadership/index.md
+  - Labs: labs/index.md
 
 # Extra
 extra:
