@@ -70,67 +70,6 @@ Master modern data engineering with comprehensive Snowflake tutorials, AI/ML gui
 
 </div>
 
-## Featured Tutorials
-
-Jump into our most popular tutorials and start building with modern data tools:
-
-<div class="grid cards" markdown>
-
--   **Data Quality Metrics** :material-arrow-right:
-
-    Master comprehensive data quality monitoring in Snowflake with built-in metrics and custom functions.
-
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/common-models/data-quality-metrics.md)
-
--   **Cortex AI** :material-arrow-right:
-
-    Leverage Snowflake's built-in AI capabilities for NLP, forecasting, and document processing.
-
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/gen-ai-llms/cortex-ai.md)
-
--   **Streamlit Apps** :material-arrow-right:
-
-    Build interactive data applications with Streamlit and Snowflake for visualization and analysis.
-
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/applications/streamlit-apps.md)
-
--   **Data Classification** :material-arrow-right:
-
-    Implement comprehensive data classification and governance in Snowflake with custom policies.
-
-    [:octicons-arrow-right-24: Read Tutorial](tutorials/advanced-warehousing/data-classification.md)
-
-</div>
-
-## Why Choose Fru Dev?
-
-<div class="grid cards" markdown>
-
--   :material-code-tags:{ .lg .middle } **Hands-on Learning**
-
-    ---
-
-    Every tutorial includes practical code examples, real-world projects, and step-by-step guidance.
-
--   :material-update:{ .lg .middle } **Always Current**
-
-    ---
-
-    Our content stays up-to-date with the latest Snowflake features and modern data engineering practices.
-
--   :material-account-group:{ .lg .middle } **Community Driven**
-
-    ---
-
-    Join a growing community of data professionals sharing knowledge and best practices.
-
--   :material-rocket:{ .lg .middle } **Production Ready**
-
-    ---
-
-    Learn techniques you can immediately apply in your professional data engineering projects.
-
-</div>
 
 ## Ready to Start?
 
