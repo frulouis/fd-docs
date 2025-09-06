@@ -131,9 +131,41 @@ nav:
   - Subscribe: subscribe.md
   - Community: community.md
   - Labs:
-    - ❄️ Snowflake: labs/snowflake/index.md
-    - 🛠️ Dev Tools: labs/dev-tools/index.md
-    - 💡 Thought Leadership: labs/thought-leadership/index.md
+    - ❄️ Snowflake: 
+      - Overview: labs/snowflake/index.md
+      - Admin Operations:
+        - Overview: labs/snowflake/admins-ops/index.md
+      - Advanced Warehousing:
+        - Data Classification: labs/snowflake/advanced-warehousing/data-classification.md
+        - Data Quality Metrics: labs/snowflake/advanced-warehousing/data-quality-metrics.md
+        - Dynamic Tables: labs/snowflake/advanced-warehousing/dynamic-tables.md
+        - Higher Order Functions: labs/snowflake/advanced-warehousing/higher-order-functions.md
+      - Applications:
+        - Streamlit Apps: labs/snowflake/applications/streamlit-apps.md
+      - Classic AI/ML:
+        - Snowpark ML: labs/snowflake/classic-ai-ml/snowpark-ml.md
+      - Collaboration & Sharing:
+        - Overview: labs/snowflake/collaboration-sharing/index.md
+      - Common Models:
+        - CaresDB Data Model: labs/snowflake/common-models/caresdb-data-model.md
+        - IoTDB Data Model: labs/snowflake/common-models/iotdb-data-model.md
+        - MediSnowDB Data Model: labs/snowflake/common-models/medisnowdb-data-model.md
+        - OrdersDB Data Model: labs/snowflake/common-models/ordersdb-data-model.md
+        - SalesDB Data Model: labs/snowflake/common-models/salesdb-data-model.md
+      - Data Science:
+        - Python Basics: labs/snowflake/data-science/python-basics.md
+      - Gen AI & LLMs:
+        - Cortex AI: labs/snowflake/gen-ai-llms/cortex-ai.md
+        - Embeddings & Vector Search: labs/snowflake/gen-ai-llms/embeddings-vector-search.md
+    - 🛠️ Dev Tools: 
+      - Overview: labs/dev-tools/index.md
+      - Cursor IDE: labs/dev-tools/cursor-ide.md
+      - GitHub Copilot: labs/dev-tools/github-copilot.md
+      - Slidev: labs/dev-tools/slidev.md
+      - Terminal & CLI: labs/dev-tools/terminal-cli.md
+      - VS Code: labs/dev-tools/vscode.md
+    - 💡 Thought Leadership: 
+      - Overview: labs/thought-leadership/index.md
 
 # Extra
 extra:
