@@ -130,8 +130,6 @@ nav:
   - Blog: blog.md
   - Subscribe: subscribe.md
   - Community: community.md
-  - Getting Started:
-    - Installation: getting-started/installation.md
   - Tutorials:
     - Admin Operations:
       - Overview: tutorials/admins-ops/index.md
