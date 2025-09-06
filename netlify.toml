@@ -1,0 +1,68 @@
+[build]
+  # Build command for MkDocs
+  command = "mkdocs build"
+  
+  # Directory to publish (MkDocs builds to 'site' directory)
+  publish = "site"
+  
+  # Functions directory (if you plan to use Netlify Functions)
+  functions = "netlify/functions"
+
+[build.environment]
+  # Python version for MkDocs
+  PYTHON_VERSION = "3.9"
+  
+  # Node.js version (if needed for any build tools)
+  NODE_VERSION = "18"
+
+# Redirect rules for clean URLs
+[[redirects]]
+  from = "/tutorials/*"
+  to = "/tutorials/:splat/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/getting-started/*"
+  to = "/getting-started/:splat/"
+  status = 301
+  force = false
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# SPA fallback for client-side routing (if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"], Country = ["US"]}
+
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
