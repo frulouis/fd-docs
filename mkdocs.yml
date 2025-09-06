@@ -1,0 +1,208 @@
+site_name: FD Tutorials
+site_description: Comprehensive tutorials and guides for data science, AI, and development
+site_author: FD
+site_url: https://fd-tutorials.com
+
+# Repository
+repo_name: fd-docs
+repo_url: https://github.com/frunde/fd-docs
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    annotation: material/comment-text-multiple
+    download: material/download
+    search: material/magnify
+    new: material/plus
+    tag: material/tag
+    flag: material/flag
+    language: material/translate
+    previous: material/arrow-left
+    next: material/arrow-right
+    top: material/arrow-up
+    link: material/link
+    copy: material/content-copy
+    check: material/check
+    close: material/close
+    fork: material/source-fork
+    source: material/source-branch
+    history: material/history
+    home: material/home
+    info: material/information
+    warning: material/alert
+    note: material/note
+    tip: material/lightbulb
+    success: material/check-circle
+    failure: material/close-circle
+    danger: material/alert-octagon
+    bug: material/bug
+    example: material/lightbulb-outline
+    quote: material/format-quote-close
+    abstract: material/format-abstract
+    tldr: material/format-list-checks
+    question: material/help-circle
+    info: material/information
+    warning: material/alert
+    failure: material/close-circle
+    danger: material/alert-octagon
+    bug: material/bug
+    example: material/lightbulb-outline
+    quote: material/format-quote-close
+    abstract: material/format-abstract
+    tldr: material/format-list-checks
+    question: material/help-circle
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+
+# Markdown extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: frunde
+      repo: fd-docs
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quick-start.md
+    - Configuration: getting-started/configuration.md
+  - Tutorials:
+    - Data Science:
+      - Python Basics: tutorials/data-science/python-basics.md
+      - Data Analysis: tutorials/data-science/data-analysis.md
+      - Machine Learning: tutorials/data-science/machine-learning.md
+    - AI & ML:
+      - Deep Learning: tutorials/ai-ml/deep-learning.md
+      - NLP: tutorials/ai-ml/nlp.md
+      - Computer Vision: tutorials/ai-ml/computer-vision.md
+    - Development:
+      - Web Development: tutorials/development/web-development.md
+      - API Development: tutorials/development/api-development.md
+      - Database Design: tutorials/development/database-design.md
+  - Guides:
+    - Best Practices: guides/best-practices.md
+    - Troubleshooting: guides/troubleshooting.md
+    - Contributing: guides/contributing.md
+  - Reference:
+    - API Reference: reference/api.md
+    - Glossary: reference/glossary.md
+  - About: about.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/frunde
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/frunde
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/frunde
+  generator: false
+
+# Copyright
+copyright: Copyright &copy; 2024 FD Tutorials
