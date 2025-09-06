@@ -1,4 +1,4 @@
-# FD Tutorials
+# Fru Dev
 
 A comprehensive tutorial site built with Material for MkDocs, inspired by madewithml.com. This site provides step-by-step tutorials for data science, AI, and development topics.
 
@@ -189,3 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Happy Learning! 🚀**
+
+---
+
+*Built with ❤️ by Fru Dev*

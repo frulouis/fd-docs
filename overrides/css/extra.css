@@ -1,11 +1,27 @@
-/* Custom styles for FD Tutorials */
+/* Custom styles for Fru Dev */
+
+/* Force dark theme */
+:root {
+  --md-default-bg-color: #000000;
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #ffffff;
+  --md-default-fg-color--lighter: #cccccc;
+  --md-default-fg-color--lightest: #999999;
+  --md-code-bg-color: #111111;
+  --md-code-fg-color: #ffffff;
+  --md-primary-fg-color: #ffffff;
+  --md-primary-bg-color: #000000;
+  --md-accent-fg-color: #ffffff;
+  --md-accent-bg-color: #000000;
+}
 
 /* Hero section styling */
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000000 0%, #111111 100%);
   color: white;
   padding: 4rem 0;
   text-align: center;
+  border-bottom: 1px solid #333333;
 }
 
 .hero h1 {
@@ -29,21 +45,23 @@
 }
 
 .grid.cards .card {
-  background: var(--md-default-bg-color);
-  border: 1px solid var(--md-default-fg-color--lightest);
+  background: #111111;
+  border: 1px solid #333333;
   border-radius: 0.5rem;
   padding: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #ffffff;
 }
 
 .grid.cards .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  border-color: #555555;
 }
 
 .grid.cards .card h3 {
   margin-top: 0;
-  color: var(--md-primary-fg-color);
+  color: #ffffff;
 }
 
 /* Code block enhancements */
@@ -73,16 +91,45 @@
   border-radius: 0.375rem;
   font-weight: 500;
   transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
 }
 
 .md-button--primary {
-  background-color: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
 }
 
 .md-button--primary:hover {
-  background-color: var(--md-accent-fg-color);
+  background-color: #cccccc;
+  color: #000000;
   transform: translateY(-1px);
+}
+
+.hero__buttons .md-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.hero__buttons .md-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-1px);
+}
+
+.hero__buttons .md-button--primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.hero__buttons .md-button--primary:hover {
+  background-color: #cccccc;
+  color: #000000;
 }
 
 /* Navigation enhancements */
@@ -131,14 +178,70 @@
   }
 }
 
-/* Dark mode adjustments */
+/* Dark mode adjustments - ensure all elements are dark */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #000000;
+  --md-default-fg-color: #ffffff;
+  --md-code-bg-color: #111111;
+  --md-code-fg-color: #ffffff;
+  --md-primary-fg-color: #ffffff;
+  --md-accent-fg-color: #ffffff;
+}
+
 [data-md-color-scheme="slate"] .grid.cards .card {
-  background: var(--md-code-bg-color);
-  border-color: var(--md-default-fg-color--lightest);
+  background: #111111;
+  border-color: #333333;
+  color: #ffffff;
 }
 
 [data-md-color-scheme="slate"] .grid.cards .card:hover {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  border-color: #555555;
+}
+
+/* Force dark theme for all elements */
+body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.md-content__inner {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.md-header {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #333333 !important;
+}
+
+.md-nav {
+  background-color: #000000 !important;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: #ffffff !important;
+}
+
+.md-typeset {
+  color: #ffffff !important;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: #ffffff !important;
+}
+
+.md-typeset a {
+  color: #ffffff !important;
+}
+
+.md-typeset a:hover {
+  color: #cccccc !important;
 }
 
 /* Custom scrollbar */

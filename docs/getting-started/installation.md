@@ -87,7 +87,7 @@ For the best experience, we recommend installing these VS Code extensions:
 
 ## Next Steps
 
-Now that you have everything set up, you're ready to start learning! Check out our [Quick Start Guide](quick-start.md) to begin your journey.
+Now that you have everything set up, you're ready to start learning! Check out our [Python Basics tutorial](../tutorials/data-science/python-basics.md) to begin your journey.
 
 ## Troubleshooting
 
@@ -106,6 +106,5 @@ Now that you have everything set up, you're ready to start learning! Check out o
 
 If you encounter any issues:
 
-1. Check our [Troubleshooting Guide](../guides/troubleshooting.md)
-2. Search existing [GitHub Issues](https://github.com/frunde/fd-docs/issues)
-3. Create a new issue with detailed error information
+1. Search existing [GitHub Issues](https://github.com/frunde/fd-docs/issues)
+2. Create a new issue with detailed error information

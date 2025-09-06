@@ -1,4 +1,4 @@
-# Welcome to FD Tutorials
+# Welcome to Fru Dev
 
 <div class="grid cards" markdown>
 
@@ -24,7 +24,7 @@
 
     Best practices, troubleshooting, and advanced techniques.
 
-    [:octicons-arrow-right-24: Read Guides](guides/best-practices.md)
+    [:octicons-arrow-right-24: Coming Soon](#)
 
 -   :material-help-circle:{ .lg .middle } **Reference**
 
@@ -32,7 +32,7 @@
 
     API documentation, glossary, and technical references.
 
-    [:octicons-arrow-right-24: View Reference](reference/api.md)
+    [:octicons-arrow-right-24: Coming Soon](#)
 
 </div>
 

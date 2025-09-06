@@ -1,6 +1,6 @@
-site_name: FD Tutorials
+site_name: Fru Dev
 site_description: Comprehensive tutorials and guides for data science, AI, and development
-site_author: FD
+site_author: Fru Dev
 site_url: https://fd-tutorials.com
 
 # Repository
@@ -39,27 +39,30 @@ theme:
     - toc.follow
     - toc.integrate
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    # Palette toggle for light mode
+    # Dark mode as default
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
+      scheme: slate
+      primary: white
+      accent: white
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Palette toggle for dark mode
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: white
+      accent: white
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Switch to light mode
+    # Default to dark
+    - media: "(prefers-color-scheme)"
+      scheme: slate
+      primary: white
+      accent: white
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -67,47 +70,11 @@ theme:
     repo: fontawesome/brands/github
     edit: material/pencil
     view: material/eye
-    annotation: material/comment-text-multiple
-    download: material/download
     search: material/magnify
-    new: material/plus
-    tag: material/tag
-    flag: material/flag
-    language: material/translate
     previous: material/arrow-left
     next: material/arrow-right
     top: material/arrow-up
-    link: material/link
-    copy: material/content-copy
-    check: material/check
-    close: material/close
-    fork: material/source-fork
-    source: material/source-branch
-    history: material/history
     home: material/home
-    info: material/information
-    warning: material/alert
-    note: material/note
-    tip: material/lightbulb
-    success: material/check-circle
-    failure: material/close-circle
-    danger: material/alert-octagon
-    bug: material/bug
-    example: material/lightbulb-outline
-    quote: material/format-quote-close
-    abstract: material/format-abstract
-    tldr: material/format-list-checks
-    question: material/help-circle
-    info: material/information
-    warning: material/alert
-    failure: material/close-circle
-    danger: material/alert-octagon
-    bug: material/bug
-    example: material/lightbulb-outline
-    quote: material/format-quote-close
-    abstract: material/format-abstract
-    tldr: material/format-list-checks
-    question: material/help-circle
 
 # Plugins
 plugins:
@@ -169,29 +136,9 @@ nav:
   - Home: index.md
   - Getting Started:
     - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quick-start.md
-    - Configuration: getting-started/configuration.md
   - Tutorials:
     - Data Science:
       - Python Basics: tutorials/data-science/python-basics.md
-      - Data Analysis: tutorials/data-science/data-analysis.md
-      - Machine Learning: tutorials/data-science/machine-learning.md
-    - AI & ML:
-      - Deep Learning: tutorials/ai-ml/deep-learning.md
-      - NLP: tutorials/ai-ml/nlp.md
-      - Computer Vision: tutorials/ai-ml/computer-vision.md
-    - Development:
-      - Web Development: tutorials/development/web-development.md
-      - API Development: tutorials/development/api-development.md
-      - Database Design: tutorials/development/database-design.md
-  - Guides:
-    - Best Practices: guides/best-practices.md
-    - Troubleshooting: guides/troubleshooting.md
-    - Contributing: guides/contributing.md
-  - Reference:
-    - API Reference: reference/api.md
-    - Glossary: reference/glossary.md
-  - About: about.md
 
 # Extra
 extra:
@@ -205,4 +152,4 @@ extra:
   generator: false
 
 # Copyright
-copyright: Copyright &copy; 2024 FD Tutorials
+copyright: Copyright &copy; 2024 Fru Dev

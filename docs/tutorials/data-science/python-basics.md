@@ -346,7 +346,7 @@ Create a function that counts the frequency of words in a text string.
 
 ## Next Steps
 
-Now that you understand Python basics, you're ready to dive into data analysis! Check out our [Data Analysis tutorial](data-analysis.md) to learn how to work with real datasets.
+Now that you understand Python basics, you're ready to dive into data analysis! More tutorials are coming soon.
 
 ## Additional Resources
 
