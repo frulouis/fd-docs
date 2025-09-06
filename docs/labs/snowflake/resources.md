@@ -55,6 +55,7 @@ A comprehensive collection of official Snowflake resources, community links, doc
 
 - **[The Data Cloud Podcast](https://www.snowflake.com/thedatacloudpodcast/)** - Industry insights and expert interviews
 - **[Snowflake Medium Page](https://medium.com/snowflake)** - Technical articles and thought leadership
+- **[23 Essential Resources & Links to Master Snowflake (2025)](https://medium.com/demohub-tutorials/23-must-bookmark-links-to-master-snowflake-ai-data-cloud-3001e44763a0)** - Comprehensive curated list of must-bookmark Snowflake resources
 - **[Snowflake YouTube (Main)](https://www.youtube.com/@SnowflakeInc)** - Official Snowflake channel
 - **[Snowflake YouTube (Developers)](https://www.youtube.com/@snowflakedevelopers)** - Developer-focused content
 - **[Snowflake Reddit Page](https://www.reddit.com/r/Snowflake/)** - Community discussions and Q&A
