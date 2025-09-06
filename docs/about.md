@@ -1,7 +1,6 @@
 # About Fru Dev  
 
-Hi, I’m Fru 👋 — I build, experiment, and share what I learn at the intersection of data, AI/ML, and modern development tools.  
-Fru Dev is my space to turn complex ideas into clear, practical tutorials that anyone can pick up and use.  
+Hi, I’m Fru 👋 — I build, experiment, and share what I learn at the intersection of data, AI/ML, and modern development tools.   
 
 ## Why Fru Dev  
 
@@ -11,10 +10,9 @@ Fru Dev is my space to turn complex ideas into clear, practical tutorials that a
 
 ## Start Learning  
 
-- [Getting Started Guide](getting-started/installation.md)  
-- [Common Data Models](tutorials/common-models/salesdb-data-model.md)  
-- [Data Quality Metrics](tutorials/advanced-warehousing/data-quality-metrics.md)  
-- [Snowpark ML](tutorials/classic-ai-ml/snowpark-ml.md)  
+- [Snowflake](labs/snowflake/index.md)  
+- [Dev Tools](labs/dev-tools/index.md)  
+- [Blog](labs/blog/index.md)  
 
 ## Connect  
 

@@ -12,7 +12,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/images/Logo.png
+  logo: assets/images/logo.svg
   icon:
     repo: fontawesome/brands/github
   features:
@@ -134,8 +134,7 @@ nav:
     - Overview: labs/index.md
     - Snowflake: labs/snowflake/index.md
     - Dev Tools: labs/dev-tools/index.md
-    - Thought Leadership: labs/thought-leadership/index.md
-    - Blog: blog.md
+    - Blog: labs/thought-leadership/index.md
   - Subscribe: subscribe.md
   - Community: community.md
 
