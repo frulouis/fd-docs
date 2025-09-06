@@ -38,22 +38,25 @@
 
 ## What You'll Learn
 
-Our tutorials cover a wide range of topics in data science, artificial intelligence, and software development:
+Our tutorials cover comprehensive topics in modern data engineering, AI/ML, and Snowflake development:
 
-### Data Science
-- **Python Fundamentals**: Master the basics of Python programming
-- **Data Analysis**: Learn to analyze and visualize data effectively
-- **Machine Learning**: Build and deploy ML models from scratch
+### Snowflake & Data Engineering
+- **Data Quality Metrics**: Implement comprehensive data quality monitoring
+- **Higher Order Functions**: Master advanced array and object transformations
+- **Dynamic Tables**: Build real-time data pipelines
+- **Database Change Management**: Version control and deployment strategies
 
 ### AI & Machine Learning
-- **Deep Learning**: Neural networks, CNNs, RNNs, and transformers
-- **Natural Language Processing**: Text analysis, sentiment analysis, and language models
-- **Computer Vision**: Image processing, object detection, and recognition
+- **Snowpark ML**: Build and deploy ML models in Snowflake
+- **Cortex AI**: Leverage Snowflake's built-in ML capabilities
+- **Embeddings & Vector Search**: Implement semantic search and RAG
+- **Document AI**: Extract insights from unstructured data
 
-### Development
-- **Web Development**: Modern web frameworks and best practices
-- **API Development**: RESTful APIs, GraphQL, and microservices
-- **Database Design**: SQL, NoSQL, and data modeling
+### Data Science & Analytics
+- **Python Fundamentals**: Master data science with Python
+- **Advanced Analytics**: Statistical analysis and forecasting
+- **Data Visualization**: Create compelling data stories
+- **Performance Optimization**: Scale your data operations
 
 ## Getting Started
 
