@@ -76,3 +76,18 @@ Master modern data engineering with comprehensive Snowflake tutorials, AI/ML gui
 Choose your learning path and begin mastering modern data engineering today.
 
 [:octicons-arrow-right-24: Browse All Tutorials](tutorials/common-models/data-quality-metrics.md){ .md-button .md-button--primary }
+
+---
+
+## Citation
+
+To cite this content, please use:
+
+```bibtex
+@article{frudev,
+    author       = {Fru Dev},
+    title        = {Fru Dev - Comprehensive Snowflake Tutorials},
+    howpublished = {\url{https://fd-tutorials.com/}},
+    year         = {2025}
+}
+```
