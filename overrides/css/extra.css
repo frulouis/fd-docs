@@ -1,5 +1,70 @@
 /* Custom styles for Fru Dev */
 
+/* Search box styling */
+.md-search__form {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.md-search__form:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.md-search__input {
+  background-color: var(--md-default-bg-color);
+  border: 2px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-search__input:focus {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+}
+
+.md-search__icon {
+  color: var(--md-default-fg-color--light);
+  transition: color 0.2s ease;
+}
+
+.md-search__form:hover .md-search__icon {
+  color: var(--md-primary-fg-color);
+}
+
+/* Search results styling */
+.md-search-result__meta {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+}
+
+.md-search-result__title {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+.md-search-result__teaser {
+  color: var(--md-default-fg-color);
+  line-height: 1.4;
+}
+
+/* Search suggestions */
+.md-search__suggest {
+  background-color: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Hide sidebar on homepage */
 .md-main__inner {
   display: flex;

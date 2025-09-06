@@ -35,6 +35,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - search.boost
     - toc.follow
     - toc.integrate
   palette:
@@ -71,6 +72,9 @@ theme:
 plugins:
   - search:
       lang: en
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+'
+      min_search_length: 2
+      prebuild_index: true
   - minify:
       minify_html: true
 
