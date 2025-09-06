@@ -152,11 +152,15 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
-.clinerules/byterover-rules.md
-.kilocode/rules/byterover-rules.md
-.roo/rules/byterover-rules.md
-.windsurf/rules/byterover-rules.md
-.cursor/rules/byterover-rules.mdc
-.kiro/steering/byterover-rules.md
-.qoder/rules/byterover-rules.md
-.augment/rules/byterover-rules.md
+
+# IDE and tool-specific directories
+.cursor/
+.github/workflows/
+.roo/
+.specstory/
+.clinerules/
+.kilocode/
+.windsurf/
+.kiro/
+.qoder/
+.augment/
