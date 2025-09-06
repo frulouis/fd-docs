@@ -4,8 +4,8 @@ site_author: Fru Dev
 site_url: https://fd-tutorials.com
 
 # Repository
-repo_name: fd-docs
-repo_url: https://github.com/frunde/fd-docs
+repo_name: fd-labs
+repo_url: https://github.com/frunde/fd-labs
 edit_uri: edit/main/docs/
 
 # Configuration
@@ -105,7 +105,7 @@ markdown_extensions:
       normalize_issue_symbols: true
       repo_url_shorthand: true
       user: frunde
-      repo: fd-docs
+      repo: fd-labs
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -132,6 +132,31 @@ nav:
   - Community: community.md
   - Getting Started:
     - Installation: getting-started/installation.md
+  - Tutorials:
+    - Admin Operations:
+      - Overview: tutorials/admins-ops/index.md
+    - Advanced Warehousing:
+      - Data Classification: tutorials/advanced-warehousing/data-classification.md
+      - Data Quality Metrics: tutorials/advanced-warehousing/data-quality-metrics.md
+      - Dynamic Tables: tutorials/advanced-warehousing/dynamic-tables.md
+      - Higher Order Functions: tutorials/advanced-warehousing/higher-order-functions.md
+    - Applications:
+      - Streamlit Apps: tutorials/applications/streamlit-apps.md
+    - Classic AI/ML:
+      - Snowpark ML: tutorials/classic-ai-ml/snowpark-ml.md
+    - Collaboration & Sharing:
+      - Overview: tutorials/collaboration-sharing/index.md
+    - Common Models:
+      - CaresDB Data Model: tutorials/common-models/caresdb-data-model.md
+      - IoTDB Data Model: tutorials/common-models/iotdb-data-model.md
+      - MediSnowDB Data Model: tutorials/common-models/medisnowdb-data-model.md
+      - OrdersDB Data Model: tutorials/common-models/ordersdb-data-model.md
+      - SalesDB Data Model: tutorials/common-models/salesdb-data-model.md
+    - Data Science:
+      - Python Basics: tutorials/data-science/python-basics.md
+    - Gen AI & LLMs:
+      - Cortex AI: tutorials/gen-ai-llms/cortex-ai.md
+      - Embeddings & Vector Search: tutorials/gen-ai-llms/embeddings-vector-search.md
 
 # Extra
 extra:
