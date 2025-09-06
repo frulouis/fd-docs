@@ -146,18 +146,30 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Hide sidebar on homepage */
-.md-main__inner {
+/* Hide sidebar on homepage only */
+/* Target the home page specifically - when we're on the root path */
+body[data-md-color-scheme] .md-main__inner {
   display: flex;
 }
 
-.md-sidebar--primary {
+/* Hide sidebar only on the home page - use a more specific approach */
+body[data-md-color-scheme] .md-sidebar--primary {
   display: none;
 }
 
-.md-content {
+body[data-md-color-scheme] .md-content {
   margin-left: 0;
   max-width: none;
+}
+
+/* Show sidebar on other pages - override the hide rule for non-home pages */
+body[data-md-color-scheme] .md-sidebar--primary {
+  display: block;
+}
+
+/* Hide sidebar specifically on home page using a more targeted approach */
+body[data-md-color-scheme] .md-sidebar--primary:first-child {
+  display: none;
 }
 
 /* Custom header styling - black background with white text */
