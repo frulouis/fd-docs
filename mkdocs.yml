@@ -131,30 +131,58 @@ nav:
   - Subscribe: subscribe.md
   - Community: community.md
   - Tutorials:
-    - Admin Operations:
-      - Overview: tutorials/admins-ops/index.md
-    - Advanced Warehousing:
-      - Data Classification: tutorials/advanced-warehousing/data-classification.md
-      - Data Quality Metrics: tutorials/advanced-warehousing/data-quality-metrics.md
-      - Dynamic Tables: tutorials/advanced-warehousing/dynamic-tables.md
-      - Higher Order Functions: tutorials/advanced-warehousing/higher-order-functions.md
-    - Applications:
-      - Streamlit Apps: tutorials/applications/streamlit-apps.md
-    - Classic AI/ML:
-      - Snowpark ML: tutorials/classic-ai-ml/snowpark-ml.md
-    - Collaboration & Sharing:
-      - Overview: tutorials/collaboration-sharing/index.md
-    - Common Models:
-      - CaresDB Data Model: tutorials/common-models/caresdb-data-model.md
-      - IoTDB Data Model: tutorials/common-models/iotdb-data-model.md
-      - MediSnowDB Data Model: tutorials/common-models/medisnowdb-data-model.md
-      - OrdersDB Data Model: tutorials/common-models/ordersdb-data-model.md
-      - SalesDB Data Model: tutorials/common-models/salesdb-data-model.md
-    - Data Science:
-      - Python Basics: tutorials/data-science/python-basics.md
-    - Gen AI & LLMs:
-      - Cortex AI: tutorials/gen-ai-llms/cortex-ai.md
-      - Embeddings & Vector Search: tutorials/gen-ai-llms/embeddings-vector-search.md
+    - 🛠️ Dev Tools:
+      - Cursor IDE: tutorials/dev-tools/cursor-ide.md
+      - SliDev: tutorials/dev-tools/slidev.md
+      - VS Code: tutorials/dev-tools/vscode.md
+      - GitHub Copilot: tutorials/dev-tools/github-copilot.md
+      - Terminal & CLI: tutorials/dev-tools/terminal-cli.md
+    - ❄️ Snowflake:
+      - Admin Operations:
+        - Overview: tutorials/snowflake/admins-ops/index.md
+      - Advanced Warehousing:
+        - Data Classification: tutorials/snowflake/advanced-warehousing/data-classification.md
+        - Data Quality Metrics: tutorials/snowflake/advanced-warehousing/data-quality-metrics.md
+        - Dynamic Tables: tutorials/snowflake/advanced-warehousing/dynamic-tables.md
+        - Higher Order Functions: tutorials/snowflake/advanced-warehousing/higher-order-functions.md
+      - Applications:
+        - Streamlit Apps: tutorials/snowflake/applications/streamlit-apps.md
+      - Classic AI/ML:
+        - Snowpark ML: tutorials/snowflake/classic-ai-ml/snowpark-ml.md
+      - Collaboration & Sharing:
+        - Overview: tutorials/snowflake/collaboration-sharing/index.md
+      - Common Models:
+        - CaresDB Data Model: tutorials/snowflake/common-models/caresdb-data-model.md
+        - IoTDB Data Model: tutorials/snowflake/common-models/iotdb-data-model.md
+        - MediSnowDB Data Model: tutorials/snowflake/common-models/medisnowdb-data-model.md
+        - OrdersDB Data Model: tutorials/snowflake/common-models/ordersdb-data-model.md
+        - SalesDB Data Model: tutorials/snowflake/common-models/salesdb-data-model.md
+      - Data Science:
+        - Python Basics: tutorials/snowflake/data-science/python-basics.md
+      - Gen AI & LLMs:
+        - Cortex AI: tutorials/snowflake/gen-ai-llms/cortex-ai.md
+        - Embeddings & Vector Search: tutorials/snowflake/gen-ai-llms/embeddings-vector-search.md
+    - 🐍 Python & Data:
+      - Python Fundamentals: tutorials/python-data/python-fundamentals.md
+      - Data Analysis: tutorials/python-data/data-analysis.md
+      - Machine Learning: tutorials/python-data/machine-learning.md
+      - Data Visualization: tutorials/python-data/data-visualization.md
+    - ☁️ Cloud & Infrastructure:
+      - AWS: tutorials/cloud-infrastructure/aws.md
+      - Azure: tutorials/cloud-infrastructure/azure.md
+      - GCP: tutorials/cloud-infrastructure/gcp.md
+      - Docker: tutorials/cloud-infrastructure/docker.md
+      - Kubernetes: tutorials/cloud-infrastructure/kubernetes.md
+    - 🤖 AI & Machine Learning:
+      - LLMs & GPT: tutorials/ai-ml/llms-gpt.md
+      - Vector Databases: tutorials/ai-ml/vector-databases.md
+      - MLOps: tutorials/ai-ml/mlops.md
+      - Computer Vision: tutorials/ai-ml/computer-vision.md
+    - 🌐 Web Development:
+      - Frontend: tutorials/web-dev/frontend.md
+      - Backend: tutorials/web-dev/backend.md
+      - Full Stack: tutorials/web-dev/full-stack.md
+      - APIs: tutorials/web-dev/apis.md
 
 # Extra
 extra:
