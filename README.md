@@ -1,13 +1,13 @@
-# Fru Dev Labs (FD Labs) - Data Engineering Tutorials
+# Fru Dev - Data Engineering Tutorials
 
-[![Deploy to GitHub Pages](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml)
-[![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-labs-blue)](https://frulouis.github.io/fd-labs)
+[![Deploy to GitHub Pages](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml)
+[![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-docs-blue)](https://frulouis.github.io/fd-docs)
 
 A comprehensive collection of modern data engineering tutorials, focusing on Snowflake, AI/ML, and hands-on projects.
 
 ## 🚀 Live Site
 
-Visit the live site at: **https://frulouis.github.io/fd-labs**
+Visit the live site at: **https://frulouis.github.io/fd-docs**
 
 ## 📚 What You'll Find
 
@@ -36,8 +36,8 @@ Visit the live site at: **https://frulouis.github.io/fd-labs**
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/frulouis/fd-labs.git
-   cd fd-labs
+   git clone https://github.com/frulouis/fd-docs.git
+   cd fd-docs
    ```
 
 2. **Install dependencies**
@@ -72,7 +72,7 @@ mkdocs serve --dev-addr 127.0.0.1:8000
 ## 📁 Project Structure
 
 ```
-fd-labs/
+fd-docs/
 ├── docs/                    # Documentation content
 │   ├── index.md            # Homepage
 │   ├── about.md            # About page
@@ -136,10 +136,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Website**: [https://frulouis.github.io/fd-labs](https://frulouis.github.io/fd-labs)
+- **Website**: [https://frulouis.github.io/fd-docs](https://frulouis.github.io/fd-docs)
 - **GitHub**: [@frulouis](https://github.com/frulouis)
 - **Email**: [contact@frudev.com](mailto:contact@frudev.com)
 
 ---
 
-**Fru Dev Labs (FD Labs)** - Empowering developers with knowledge and practical skills for the modern data world.
+**Fru Dev** - Empowering developers with knowledge and practical skills for the modern data world.
