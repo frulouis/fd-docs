@@ -195,3 +195,337 @@ Your repository is now accessible at: https://github.com/frulouis/fd-labs
 
 ---
 
+_**User (2025-09-06 02:29Z)**_
+
+i've connected netlify to the repo but the site isn't showing. do i need to do something diffdrernt for netlify to work with this repo
+
+---
+
+_**Assistant**_
+
+Let me help you troubleshoot the Netlify deployment. First, let me check your current repository structure and configuration to understand what might be needed for Netlify to work properly.
+
+
+---
+
+Read file: undefined
+
+---
+
+<details>
+            <summary>Listed directory undefined • **0** results</summary>
+        
+No results found
+</details>
+
+---
+
+Read file: undefined
+
+---
+
+I can see the issue! Your repository is set up for **MkDocs** (a static site generator), but there are several problems that need to be fixed for Netlify to work properly:
+
+## Issues Found:
+
+1. **Repository references still point to old name** - The `mkdocs.yml` and `README.md` still reference `fd-docs` instead of `fd-labs`
+2. **Missing Netlify configuration** - No `netlify.toml` file for proper deployment settings
+3. **Build directory mismatch** - MkDocs builds to `site/` but Netlify might be looking elsewhere
+
+Let me fix these issues:
+
+
+---
+
+## Todo List
+
+- [-] Update repository references from fd-docs to fd-labs in mkdocs.yml and README.md
+- [ ] Create netlify.toml configuration file for proper MkDocs deployment
+- [ ] Update GitHub Actions workflow to use new repository name
+- [ ] Verify Netlify deployment works correctly
+
+---
+
+### 1. First, let's update the repository references in mkdocs.yml:
+
+
+---
+
+<details><summary>Edit file: mkdocs.yml</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -5,6 +5,6 @@
+  
+  # Repository
+- repo_name: fd-docs
+- repo_url: https://github.com/frunde/fd-docs
++ repo_name: fd-labs
++ repo_url: https://github.com/frulouis/fd-labs
+  edit_uri: edit/main/docs/
+  
+```
+
+</details>
+
+---
+
+<details><summary>Edit file: mkdocs.yml</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -105,6 +105,6 @@
+        normalize_issue_symbols: true
+        repo_url_shorthand: true
+-       user: frunde
+-       repo: fd-docs
++       user: frulouis
++       repo: fd-labs
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+```
+
+</details>
+
+---
+
+### 2. Now let's update the README.md:
+
+
+---
+
+<details><summary>Edit file: README.md</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -1,6 +1,6 @@
+  # Fru Dev - Data Engineering Tutorials
+  
+- [![Deploy to GitHub Pages](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-docs/actions/workflows/deploy.yml)
+- [![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-docs-blue)](https://frulouis.github.io/fd-docs)
++ [![Deploy to GitHub Pages](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml/badge.svg)](https://github.com/frulouis/fd-labs/actions/workflows/deploy.yml)
++ [![Live Site](https://img.shields.io/badge/Live%20Site-https://frulouis.github.io/fd-labs-blue)](https://frulouis.github.io/fd-labs)
+  
+  A comprehensive collection of modern data engineering tutorials, focusing on Snowflake, AI/ML, and hands-on projects.
+```
+
+</details>
+
+---
+
+<details><summary>Edit file: README.md</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
+```diff
+@@ -8,5 +8,5 @@
+  ## 🚀 Live Site
+  
+- Visit the live site at: **https://frulouis.github.io/fd-docs**
++ Visit the live site at: **https://frulouis.github.io/fd-labs**
+  
+  ## 📚 What You'll Find
+```
+
+</details>
+
+---
+
+<details><summary>Edit file: README.md</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -37,6 +37,6 @@
+  1. **Clone the repository**
+     ```bash
+-    git clone https://github.com/frulouis/fd-docs.git
+-    cd fd-docs
++    git clone https://github.com/frulouis/fd-labs.git
++    cd fd-labs
+     ```
+  
+```
+
+</details>
+
+---
+
+<details><summary>Edit file: README.md</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
+```diff
+@@ -73,5 +73,5 @@
+  
+  ```
+- fd-docs/
++ fd-labs/
+  ├── docs/                    # Documentation content
+  │   ├── index.md            # Homepage
+```
+
+</details>
+
+---
+
+<details><summary>Edit file: README.md</summary>
+
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
+```diff
+@@ -137,5 +137,5 @@
+  ## 📞 Contact
+  
+- - **Website**: [https://frulouis.github.io/fd-docs](https://frulouis.github.io/fd-docs)
++ - **Website**: [https://frulouis.github.io/fd-labs](https://frulouis.github.io/fd-labs)
+  - **GitHub**: [@frulouis](https://github.com/frulouis)
+  - **Email**: [contact@frudev.com](mailto:contact@frudev.com)
+```
+
+</details>
+
+---
+
+## Todo List
+
+- [x] Update repository references from fd-docs to fd-labs in mkdocs.yml and README.md
+- [ ] Create netlify.toml configuration file for proper MkDocs deployment
+- [ ] Update GitHub Actions workflow to use new repository name
+- [ ] Verify Netlify deployment works correctly
+
+---
+
+### 3. Now let's create the Netlify configuration file:
+
+
+---
+
+## Todo List
+
+- [x] Update repository references from fd-docs to fd-labs in mkdocs.yml and README.md
+- [-] Create netlify.toml configuration file for proper MkDocs deployment
+- [ ] Update GitHub Actions workflow to use new repository name
+- [ ] Verify Netlify deployment works correctly
+
+---
+
+
+
+---
+
+### 4. Let's check if there's a GitHub Actions workflow that needs updating:
+
+
+---
+
+<details>
+            <summary>Listed directory undefined • **0** results</summary>
+        
+No results found
+</details>
+
+---
+
+Read file: undefined
+
+---
+
+The GitHub Actions workflow looks fine and doesn't need updating since it doesn't reference the repository name directly.
+
+
+---
+
+## Todo List
+
+- [x] Update repository references from fd-docs to fd-labs in mkdocs.yml and README.md
+- [x] Create netlify.toml configuration file for proper MkDocs deployment
+- [x] Update GitHub Actions workflow to use new repository name
+- [ ] Verify Netlify deployment works correctly
+
+---
+
+### 5. Let's commit these changes and push them:
+
+
+---
+
+```bash
+git add .
+```
+
+```
+frunde@Inspireds-MacBook-Pro fd-labs % git add .
+frunde@Inspireds-MacBook-Pro fd-labs %
+```
+
+---
+
+```bash
+git commit -m "Update repository references from fd-docs to fd-labs and add Netlify configuration"
+```
+
+```
+frunde@Inspireds-MacBook-Pro fd-labs % git commit -m "Update repository references from fd-docs to fd-labs a
+nd add Netlify configuration"
+[main c57a26c] Update repository references from fd-docs to fd-labs and add Netlify configuration
+ 6 files changed, 589 insertions(+), 12 deletions(-)
+ create mode 100644 .specstory/history/2025-09-06_02-29Z-rename-github-repository-from-fd-docs.md
+ create mode 100644 netlify.toml
+frunde@Inspireds-MacBook-Pro fd-labs %
+```
+
+---
+
+```bash
+git push origin main
+```
+
+```
+frunde@Inspireds-MacBook-Pro fd-labs % git push origin main
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 5.82 KiB | 1.94 MiB/s, done.
+Total 10 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/frulouis/fd-labs.git
+   2a768d0..c57a26c  main -> main
+frunde@Inspireds-MacBook-Pro fd-labs %
+```
+
+---
+
+Error parsing todo list data
+
+---
+
+
+
+---
+
