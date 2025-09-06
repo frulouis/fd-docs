@@ -23,7 +23,6 @@ theme:
     - content.tooltips
     - header.autohide
     - navigation.expand
-    - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
@@ -42,7 +41,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: black
       accent: black
       toggle:
         icon: material/brightness-7
@@ -50,7 +49,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: black
       accent: black
       toggle:
         icon: material/brightness-4
@@ -173,4 +172,4 @@ extra:
   generator: false
 
 # Copyright
-copyright: Copyright &copy; 2024 Fru Dev
+copyright: Copyright &copy; 2025 Fru Dev
