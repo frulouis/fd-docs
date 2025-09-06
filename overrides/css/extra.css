@@ -1,5 +1,19 @@
 /* Custom styles for Fru Dev */
 
+/* Hide sidebar on homepage */
+.md-main__inner {
+  display: flex;
+}
+
+.md-sidebar--primary {
+  display: none;
+}
+
+.md-content {
+  margin-left: 0;
+  max-width: none;
+}
+
 /* Custom header styling - black background with white text */
 .md-header {
   background-color: #000000 !important;
