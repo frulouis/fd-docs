@@ -43,7 +43,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: indigo
+      accent: black
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -51,7 +51,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
-      accent: indigo
+      accent: black
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -132,34 +132,12 @@ nav:
     - Snowflake:
       - Data Quality Metrics: tutorials/snowflake/data-quality-metrics.md
       - Higher Order Functions: tutorials/snowflake/higher-order-functions.md
-      - Data Classification: tutorials/snowflake/data-classification.md
-      - ASOF JOIN: tutorials/snowflake/asof-join.md
-      - Fuzzy Matching: tutorials/snowflake/fuzzy-matching.md
-      - Aggregation Policies: tutorials/snowflake/aggregation-policies.md
-      - Projection Policies: tutorials/snowflake/projection-policies.md
-      - Memoizable Functions: tutorials/snowflake/memoizable-functions.md
       - Dynamic Tables: tutorials/snowflake/dynamic-tables.md
-      - Database Change Management: tutorials/snowflake/database-change-management.md
     - AI/ML:
-      - Cortex ML Forecasting: tutorials/ai-ml/cortex-forecasting.md
-      - Cortex Anomaly Detection: tutorials/ai-ml/cortex-anomaly-detection.md
-      - Cortex Classification: tutorials/ai-ml/cortex-classification.md
       - Snowpark ML: tutorials/ai-ml/snowpark-ml.md
       - Embeddings & Vector Search: tutorials/ai-ml/embeddings-vector-search.md
-      - Document AI: tutorials/ai-ml/document-ai.md
-      - Cortex Finetuning: tutorials/ai-ml/cortex-finetuning.md
-    - Data Engineering:
-      - Streamlit Chatbot: tutorials/data-engineering/streamlit-chatbot.md
-      - Universal Search: tutorials/data-engineering/universal-search.md
-      - Co-Pilot: tutorials/data-engineering/co-pilot.md
     - Data Science:
       - Python Basics: tutorials/data-science/python-basics.md
-      - Data Analysis: tutorials/data-science/data-analysis.md
-      - Machine Learning: tutorials/data-science/machine-learning.md
-    - Administration:
-      - Trust Center: tutorials/admin/trust-center.md
-      - Cost Insights: tutorials/admin/cost-insights.md
-      - JMeter Load Testing: tutorials/admin/jmeter-load-testing.md
 
 # Extra
 extra:
