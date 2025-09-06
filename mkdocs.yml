@@ -12,6 +12,9 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: overrides
+  logo: assets/images/logo.svg
+  icon:
+    repo: fontawesome/brands/github
   features:
     - announce.dismiss
     - content.action.edit
