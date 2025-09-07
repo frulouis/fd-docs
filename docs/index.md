@@ -2,6 +2,11 @@
 
 Master modern data engineering with comprehensive Snowflake tutorials, AI/ML guides, and hands-on projects.
 
+!!! quote "🌏 Curiosity, meet developing."
+    I'm Fru, and Fru Labs is my sandbox where curiosity collides with code. From AI and data to Cursor, Snowflake, and Slidev, this is where concepts turn into experiments — and experiments turn into tools, tutorials, and communities. Less theory. More Developing.
+    
+    [:octicons-arrow-right-24: Join the Experiment →](labs/index.md){ .md-button .md-button--primary }
+
 ## About Fru Dev  
 
 Hi, I'm Fru 👋 — I build, experiment, and share what I learn at the intersection of data, AI/ML, and modern development tools.   
