@@ -148,6 +148,25 @@
 
 /* Sidebar is now visible on all pages by default */
 
+/* Ensure sidebar is always visible */
+.md-sidebar--primary {
+  display: block !important;
+}
+
+.md-sidebar--secondary {
+  display: block !important;
+}
+
+/* Ensure main content area adjusts properly with sidebar */
+.md-main__inner {
+  display: flex !important;
+}
+
+.md-content {
+  flex: 1 1 0%;
+  margin-left: 0;
+}
+
 /* Custom header styling - black background with white text */
 .md-header {
   background-color: #000000 !important;
