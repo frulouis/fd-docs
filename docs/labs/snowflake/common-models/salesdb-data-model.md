@@ -32,7 +32,7 @@ _DemoHub - SalesDB Data Model - Version 1.2.7 (updated 05/23/2024)_
 
 ## 1. DATABASE AND SCHEMA SETUP
 
-![SalesDB Data Model Architecture](../../assets/images/salesdb-architecture.png)
+![SalesDB Data Model Architecture](../../../assets/images/salesdb-architecture.png)
 
 ```sql title="Database and Schema Setup" linenums="1"
 -- +----------------------------------------------------+
@@ -106,7 +106,7 @@ CREATE OR REPLACE TABLE Opportunities (
 
 ## 3. INSERT SAMPLE DATA
 
-![SalesDB Data Quality Dashboard](../../assets/images/salesdb-data-quality.png)
+![SalesDB Data Quality Dashboard](../../../assets/images/salesdb-data-quality.png)
 
 ```sql title="Insert Sample Data with Quality Issues" linenums="106"
 -- +----------------------------------------------------+
@@ -247,7 +247,7 @@ AND ExpectedCloseDate BETWEEN CURRENT_DATE AND DATEADD(month, 1, CURRENT_DATE);
 
 ## 5. CREATE TAGS AND APPLY
 
-![SalesDB PII Tagging Implementation](../../assets/images/salesdb-pii-tagging.png)
+![SalesDB PII Tagging Implementation](../../../assets/images/salesdb-pii-tagging.png)
 
 ```sql title="Create and Apply Data Tags" linenums="247"
 -- +----------------------------------------------------+
@@ -292,7 +292,7 @@ ALTER TABLE Opportunities MODIFY COLUMN SalesStage SET TAG Sales_Stage = 'SalesS
 
 ## 6. CREATE MASKING AND APPLY TO TAGS/COLUMNS
 
-![SalesDB Data Masking Policy Flow](../../assets/images/salesdb-masking-policy.png)
+![SalesDB Data Masking Policy Flow](../../../assets/images/salesdb-masking-policy.png)
 
 ```sql title="Create Data Masking Policies" linenums="292"
 -- +----------------------------------------------------+
@@ -314,7 +314,7 @@ ALTER TAG PII SET MASKING POLICY mask_pii;
 
 ## 7. RBAC PRIVILEGES SETUP
 
-![SalesDB RBAC Architecture](../../assets/images/salesdb-rbac-architecture.png)
+![SalesDB RBAC Architecture](../../../assets/images/salesdb-rbac-architecture.png)
 
 ```sql title="Setup Role-Based Access Control" linenums="314"
 -- +----------------------------------------------------+
@@ -367,7 +367,7 @@ GRANT ROLE SalesRep TO USER Demo;
 
 ## 9. RESET DEMO ENVIRONMENT
 
-![SalesDB Analytics Dashboard](../../assets/images/salesdb-analytics-dashboard.png)
+![SalesDB Analytics Dashboard](../../../assets/images/salesdb-analytics-dashboard.png)
 
 ```sql title="Reset Demo Environment" linenums="367"
 -- +----------------------------------------------------+
