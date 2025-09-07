@@ -51,7 +51,7 @@ CREATE OR REPLACE SCHEMA customer;
 
 ## 2. CREATE TABLE OBJECTS
 
-```sql title="Create Database Tables" linenums="1"
+```sql title="Create Database Tables" linenums="10"
 -- +----------------------------------------------------+
 -- |             2. CREATE TABLE OBJECTS             |
 -- +----------------------------------------------------+
@@ -108,7 +108,7 @@ CREATE OR REPLACE TABLE Opportunities (
 
 ![SalesDB Data Quality Dashboard](../../assets/images/salesdb-data-quality.png)
 
-```sql title="Insert Sample Data with Quality Issues" linenums="1"
+```sql title="Insert Sample Data with Quality Issues" linenums="106"
 -- +----------------------------------------------------+
 -- |             3. INSERT SAMPLE DATA             |
 -- +----------------------------------------------------+
@@ -177,7 +177,7 @@ VALUES
 
 ## 4. CREATE FUNCTIONS AND STORED PROCEDURES
 
-```sql title="Create Functions and Stored Procedures" linenums="1"
+```sql title="Create Functions and Stored Procedures" linenums="177"
 -- +----------------------------------------------------+
 -- |             4. CREATE FUNCTIONS AND STORED PROCEDURES             |
 -- +----------------------------------------------------+
@@ -249,7 +249,7 @@ AND ExpectedCloseDate BETWEEN CURRENT_DATE AND DATEADD(month, 1, CURRENT_DATE);
 
 ![SalesDB PII Tagging Implementation](../../assets/images/salesdb-pii-tagging.png)
 
-```sql title="Create and Apply Data Tags" linenums="1"
+```sql title="Create and Apply Data Tags" linenums="247"
 -- +----------------------------------------------------+
 -- |             5. CREATE TAGS AND APPLY             |
 -- +----------------------------------------------------+
@@ -294,7 +294,7 @@ ALTER TABLE Opportunities MODIFY COLUMN SalesStage SET TAG Sales_Stage = 'SalesS
 
 ![SalesDB Data Masking Policy Flow](../../assets/images/salesdb-masking-policy.png)
 
-```sql title="Create Data Masking Policies" linenums="1"
+```sql title="Create Data Masking Policies" linenums="292"
 -- +----------------------------------------------------+
 -- |             6. CREATE MASKING AND APPLY TO TAGS/COLUMNS          |
 -- +----------------------------------------------------+
@@ -316,7 +316,7 @@ ALTER TAG PII SET MASKING POLICY mask_pii;
 
 ![SalesDB RBAC Architecture](../../assets/images/salesdb-rbac-architecture.png)
 
-```sql title="Setup Role-Based Access Control" linenums="1"
+```sql title="Setup Role-Based Access Control" linenums="314"
 -- +----------------------------------------------------+
 -- |             7. RBAC PRIVILEGES SETUP               |
 -- +----------------------------------------------------+
@@ -349,7 +349,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA customer TO ROLE SalesManager; -- More acce
 
 ## 8. SWITCH TO THE ACCOUNTADMIN ROLE
 
-```sql title="Switch to AccountAdmin Role" linenums="1"
+```sql title="Switch to AccountAdmin Role" linenums="349"
 -- +----------------------------------------------------+
 -- |       8. SWITCH TO THE ACCOUNTADMIN ROLE           |
 -- +----------------------------------------------------+
@@ -369,7 +369,7 @@ GRANT ROLE SalesRep TO USER Demo;
 
 ![SalesDB Analytics Dashboard](../../assets/images/salesdb-analytics-dashboard.png)
 
-```sql title="Reset Demo Environment" linenums="1"
+```sql title="Reset Demo Environment" linenums="367"
 -- +----------------------------------------------------+
 -- |             9. RESET DEMO ENVIRONMENT              |
 -- +----------------------------------------------------+
