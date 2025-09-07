@@ -148,14 +148,24 @@
 
 /* Sidebar is now visible on all pages by default */
 
-/* Ensure sidebar is always visible */
-.md-sidebar--primary {
+/* Force sidebar visibility with maximum specificity */
+.md-main .md-sidebar--primary,
+.md-main .md-sidebar--secondary,
+.md-sidebar--primary,
+.md-sidebar--secondary {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  transform: none !important;
+  transition: none !important;
 }
 
-.md-sidebar--secondary {
+/* Override any theme hiding */
+[data-md-color-scheme] .md-sidebar--primary,
+[data-md-color-scheme] .md-sidebar--secondary {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -173,11 +183,20 @@
 
 /* Force sidebar visibility on all screen sizes */
 @media screen and (max-width: 76.1875em) {
-  .md-sidebar--primary {
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
   }
+}
+
+/* Override any JavaScript hiding */
+.md-sidebar--primary[hidden],
+.md-sidebar--secondary[hidden] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 /* Custom header styling - black background with white text */

@@ -132,7 +132,14 @@ nav:
   - Home: index.md
   - Labs: 
     - Overview: labs/index.md
-    - Snowflake: labs/snowflake/index.md
+    - Snowflake: 
+      - Overview: labs/snowflake/index.md
+      - Common Models:
+        - SalesDB: labs/snowflake/common-models/salesdb-data-model.md
+        - CaresDB: labs/snowflake/common-models/caresdb-data-model.md
+        - IoTDB: labs/snowflake/common-models/iotdb-data-model.md
+        - MediSnowDB: labs/snowflake/common-models/medisnowdb-data-model.md
+        - OrdersDB: labs/snowflake/common-models/ordersdb-data-model.md
     - Dev Tools: labs/dev-tools/index.md
     - Blog: labs/thought-leadership/index.md
   - Subscribe: subscribe.md
