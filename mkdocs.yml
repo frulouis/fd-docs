@@ -140,6 +140,27 @@ nav:
         - IoTDB: labs/snowflake/common-models/iotdb-data-model.md
         - MediSnowDB: labs/snowflake/common-models/medisnowdb-data-model.md
         - OrdersDB: labs/snowflake/common-models/ordersdb-data-model.md
+      - Data Warehousing:
+        - Data Classification: labs/snowflake/advanced-warehousing/data-classification.md
+        - Data Quality Metrics: labs/snowflake/advanced-warehousing/data-quality-metrics.md
+        - Dynamic Tables: labs/snowflake/advanced-warehousing/dynamic-tables.md
+        - Higher Order Functions: labs/snowflake/advanced-warehousing/higher-order-functions.md
+      - Data Engineering:
+        - Python Basics: labs/snowflake/data-science/python-basics.md
+      - Data Lake:
+        - Coming Soon: labs/snowflake/data-lake/index.md
+      - Classic AI/ML:
+        - Snowpark ML: labs/snowflake/classic-ai-ml/snowpark-ml.md
+      - Gen AI/LLMs:
+        - Cortex AI: labs/snowflake/gen-ai-llms/cortex-ai.md
+        - Embeddings & Vector Search: labs/snowflake/gen-ai-llms/embeddings-vector-search.md
+      - Applications:
+        - Streamlit Apps: labs/snowflake/applications/streamlit-apps.md
+      - Collaboration:
+        - Data Sharing: labs/snowflake/collaboration-sharing/index.md
+      - Admins:
+        - Admin Operations: labs/snowflake/admins-ops/index.md
+      - Resources: labs/snowflake/resources.md
     - Dev Tools: labs/dev-tools/index.md
     - Blog: labs/thought-leadership/index.md
   - Subscribe: subscribe.md
