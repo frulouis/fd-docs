@@ -142,12 +142,12 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/frunde
+      link: https://github.com/frulouis
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/frunde
+      link: https://twitter.com/frulouis
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/frunde
+      link: https://linkedin.com/in/frulouis
   generator: false
 
 # Copyright
-copyright: Copyright &copy; 2025 Fru Dev
+copyright: Copyright &copy; 2025 Fru Dev | DEVeloping the future of Data, AI, and Tech
