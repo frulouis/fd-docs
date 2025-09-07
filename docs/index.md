@@ -20,6 +20,9 @@ Ready to begin your data engineering journey? Start with our comprehensive insta
 
 ---
 
+!!! info "Questions?"
+    If you have additional questions, send us an email (fru.dev3@gmail.com) and we'll get back to you very soon.
+
 ## Citation
 
 To cite this content, please use:
