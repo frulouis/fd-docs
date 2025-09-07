@@ -4,7 +4,7 @@ The provided SalesDB data model includes four tables: Customer, Buyer, Client, a
 
 _DemoHub - SalesDB Data Model - Version 1.2.7 (updated 05/23/2024)_
 
-```sql
+```sql title="SalesDB Demo Script Header"
 /*
 ------------------------------------------------------------------------------
 -- Snowflake Demo Script: Sales Data Model and Universal Search Exploration
@@ -32,7 +32,9 @@ _DemoHub - SalesDB Data Model - Version 1.2.7 (updated 05/23/2024)_
 
 ## 1. DATABASE AND SCHEMA SETUP
 
-```sql
+![SalesDB Data Model Architecture](../../assets/images/salesdb-architecture.png)
+
+```sql title="Database and Schema Setup" linenums="1"
 -- +----------------------------------------------------+
 -- |             1. DATABASE AND SCHEMA SETUP             |
 -- +----------------------------------------------------+
@@ -49,7 +51,7 @@ CREATE OR REPLACE SCHEMA customer;
 
 ## 2. CREATE TABLE OBJECTS
 
-```sql
+```sql title="Create Database Tables" linenums="1"
 -- +----------------------------------------------------+
 -- |             2. CREATE TABLE OBJECTS             |
 -- +----------------------------------------------------+
@@ -104,7 +106,9 @@ CREATE OR REPLACE TABLE Opportunities (
 
 ## 3. INSERT SAMPLE DATA
 
-```sql
+![SalesDB Data Quality Dashboard](../../assets/images/salesdb-data-quality.png)
+
+```sql title="Insert Sample Data with Quality Issues" linenums="1"
 -- +----------------------------------------------------+
 -- |             3. INSERT SAMPLE DATA             |
 -- +----------------------------------------------------+
@@ -173,7 +177,7 @@ VALUES
 
 ## 4. CREATE FUNCTIONS AND STORED PROCEDURES
 
-```sql
+```sql title="Create Functions and Stored Procedures" linenums="1"
 -- +----------------------------------------------------+
 -- |             4. CREATE FUNCTIONS AND STORED PROCEDURES             |
 -- +----------------------------------------------------+
@@ -243,7 +247,9 @@ AND ExpectedCloseDate BETWEEN CURRENT_DATE AND DATEADD(month, 1, CURRENT_DATE);
 
 ## 5. CREATE TAGS AND APPLY
 
-```sql
+![SalesDB PII Tagging Implementation](../../assets/images/salesdb-pii-tagging.png)
+
+```sql title="Create and Apply Data Tags" linenums="1"
 -- +----------------------------------------------------+
 -- |             5. CREATE TAGS AND APPLY             |
 -- +----------------------------------------------------+
@@ -286,7 +292,9 @@ ALTER TABLE Opportunities MODIFY COLUMN SalesStage SET TAG Sales_Stage = 'SalesS
 
 ## 6. CREATE MASKING AND APPLY TO TAGS/COLUMNS
 
-```sql
+![SalesDB Data Masking Policy Flow](../../assets/images/salesdb-masking-policy.png)
+
+```sql title="Create Data Masking Policies" linenums="1"
 -- +----------------------------------------------------+
 -- |             6. CREATE MASKING AND APPLY TO TAGS/COLUMNS          |
 -- +----------------------------------------------------+
@@ -306,7 +314,9 @@ ALTER TAG PII SET MASKING POLICY mask_pii;
 
 ## 7. RBAC PRIVILEGES SETUP
 
-```sql
+![SalesDB RBAC Architecture](../../assets/images/salesdb-rbac-architecture.png)
+
+```sql title="Setup Role-Based Access Control" linenums="1"
 -- +----------------------------------------------------+
 -- |             7. RBAC PRIVILEGES SETUP               |
 -- +----------------------------------------------------+
@@ -339,7 +349,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA customer TO ROLE SalesManager; -- More acce
 
 ## 8. SWITCH TO THE ACCOUNTADMIN ROLE
 
-```sql
+```sql title="Switch to AccountAdmin Role" linenums="1"
 -- +----------------------------------------------------+
 -- |       8. SWITCH TO THE ACCOUNTADMIN ROLE           |
 -- +----------------------------------------------------+
@@ -357,7 +367,9 @@ GRANT ROLE SalesRep TO USER Demo;
 
 ## 9. RESET DEMO ENVIRONMENT
 
-```sql
+![SalesDB Analytics Dashboard](../../assets/images/salesdb-analytics-dashboard.png)
+
+```sql title="Reset Demo Environment" linenums="1"
 -- +----------------------------------------------------+
 -- |             9. RESET DEMO ENVIRONMENT              |
 -- +----------------------------------------------------+
