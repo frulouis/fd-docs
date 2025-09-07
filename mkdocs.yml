@@ -1,7 +1,7 @@
-site_name: Fru Dev Labs
-site_description: Comprehensive tutorials and guides for data science, AI, and development
+site_name: Fru Labs
+site_description: DEVeloping the future of Data, AI, and Tech
 site_author: Fru Dev
-site_url: https://fd-tutorials.com
+site_url: https://labs.fru.dev
 
 # Repository
 repo_name: fd-labs
@@ -108,7 +108,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: frunde
+      user: frulouis
       repo: fd-labs
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -130,7 +130,6 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - About: about.md
   - Labs: 
     - Overview: labs/index.md
     - Snowflake: labs/snowflake/index.md
