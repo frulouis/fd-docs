@@ -151,10 +151,14 @@
 /* Ensure sidebar is always visible */
 .md-sidebar--primary {
   display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .md-sidebar--secondary {
   display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 /* Ensure main content area adjusts properly with sidebar */
@@ -165,6 +169,15 @@
 .md-content {
   flex: 1 1 0%;
   margin-left: 0;
+}
+
+/* Force sidebar visibility on all screen sizes */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 }
 
 /* Custom header styling - black background with white text */
