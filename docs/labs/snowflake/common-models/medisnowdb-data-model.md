@@ -487,3 +487,11 @@ SELECT 'ClinicalTrial', COUNT(*) FROM ClinicalTrial;
 - [MediSnowDB Setup Script](https://complex-teammates-374480.framer.app/demo/medisnowdb) - Complete implementation
 - [Data Classification Tutorial](../advanced-warehousing/data-classification.md) - HIPAA compliance
 - [Cortex AI Tutorial](../gen-ai-llms/cortex-ai.md) - Medical text analysis
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: OrdersDB Data Model](ordersdb-data-model.md){ .md-button .md-button--primary }
+
+Explore e-commerce data management with our comprehensive OrdersDB implementation, featuring order processing and customer analytics.

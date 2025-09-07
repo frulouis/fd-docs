@@ -5,6 +5,7 @@ Welcome to the comprehensive developer tools learning lab! This section covers a
 ## 📚 Tool Categories
 
 ### 💻 Code Editors & IDEs
+- [AI IDEs](ai-ides.md) - AI-powered development environments overview
 - [Cursor IDE](cursor-ide.md) - AI-powered development environment
 - [VS Code](vscode.md) - Essential extensions and productivity tips
 - [GitHub Copilot](github-copilot.md) - AI-powered code suggestions
@@ -57,3 +58,11 @@ New to development? Start with these essential tools:
 ---
 
 *Explore our comprehensive developer tools labs to master modern development workflows!*
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: AI IDEs](ai-ides.md){ .md-button .md-button--primary }
+
+Explore the world of AI-powered development environments, featuring intelligent code completion, automated generation, and enhanced productivity.

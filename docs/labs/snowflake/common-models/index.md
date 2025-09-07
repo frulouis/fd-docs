@@ -132,3 +132,11 @@ These models are designed to be:
 ---
 
 *Ready to dive in? Choose a model above and start exploring the power of Snowflake with realistic, industry-specific data!*
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: SalesDB Data Model](salesdb-data-model.md){ .md-button .md-button--primary }
+
+Start with our comprehensive SalesDB implementation, featuring customer relationships, opportunity tracking, and Universal Search capabilities.

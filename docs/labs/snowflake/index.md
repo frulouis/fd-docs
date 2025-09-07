@@ -53,3 +53,11 @@ New to Snowflake? Start with these essential topics:
 ---
 
 *Explore our comprehensive Snowflake labs to master data warehousing, analytics, and AI capabilities!*
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: Common Data Models](common-models/index.md){ .md-button .md-button--primary }
+
+Start with our collection of industry-specific data models, featuring realistic schemas for healthcare, IoT, e-commerce, and sales analytics.

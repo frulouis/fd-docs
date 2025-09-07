@@ -16,3 +16,11 @@ Cursor IDE is a powerful code editor built on VS Code with integrated AI capabil
 ---
 
 *This tutorial is coming soon! Check back for detailed content.*
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: GitHub Copilot](github-copilot.md){ .md-button .md-button--primary }
+
+Explore AI-powered coding assistance with GitHub Copilot, featuring intelligent code suggestions and pair programming capabilities.

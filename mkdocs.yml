@@ -51,7 +51,7 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: green
+      primary: black
       accent: green
       toggle:
         icon: material/brightness-4
@@ -131,43 +131,74 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - About: about.md
-  - Labs: 
-    - Overview: labs/index.md
-    - Snowflake: 
-      - Overview: labs/snowflake/index.md
-      - Common Models:
-        - Overview: labs/snowflake/common-models/index.md
-        - SalesDB: labs/snowflake/common-models/salesdb-data-model.md
-        - CaresDB: labs/snowflake/common-models/caresdb-data-model.md
-        - IoTDB: labs/snowflake/common-models/iotdb-data-model.md
-        - MediSnowDB: labs/snowflake/common-models/medisnowdb-data-model.md
-        - OrdersDB: labs/snowflake/common-models/ordersdb-data-model.md
-      - Data Warehousing:
-        - Data Classification: labs/snowflake/advanced-warehousing/data-classification.md
-        - Data Quality Metrics: labs/snowflake/advanced-warehousing/data-quality-metrics.md
-        - Dynamic Tables: labs/snowflake/advanced-warehousing/dynamic-tables.md
-        - Higher Order Functions: labs/snowflake/advanced-warehousing/higher-order-functions.md
-      - Data Engineering:
-        - Python Basics: labs/snowflake/data-science/python-basics.md
-      - Data Lake:
-        - Coming Soon: labs/snowflake/data-lake/index.md
-      - Classic AI/ML:
-        - Snowpark ML: labs/snowflake/classic-ai-ml/snowpark-ml.md
-      - Gen AI/LLMs:
-        - Cortex AI: labs/snowflake/gen-ai-llms/cortex-ai.md
-        - Embeddings & Vector Search: labs/snowflake/gen-ai-llms/embeddings-vector-search.md
-      - Applications:
-        - Streamlit Apps: labs/snowflake/applications/streamlit-apps.md
-      - Collaboration:
-        - Data Sharing: labs/snowflake/collaboration-sharing/index.md
-      - Admins:
-        - Admin Operations: labs/snowflake/admins-ops/index.md
-      - Resources: labs/snowflake/resources.md
-    - Dev Tools: labs/dev-tools/index.md
-    - Blog: labs/blog/index.md
+  - Labs: labs/index.md
+  - Snowflake: 
+    - Overview: labs/snowflake/index.md
+    - Common Models:
+      - Overview: labs/snowflake/common-models/index.md
+      - SalesDB: labs/snowflake/common-models/salesdb-data-model.md
+      - CaresDB: labs/snowflake/common-models/caresdb-data-model.md
+      - IoTDB: labs/snowflake/common-models/iotdb-data-model.md
+      - MediSnowDB: labs/snowflake/common-models/medisnowdb-data-model.md
+      - Tab Test: labs/snowflake/common-models/tab-test-page.md
+      - OrdersDB: labs/snowflake/common-models/ordersdb-data-model.md
+    - Data Warehousing:
+      - Data Classification: labs/snowflake/advanced-warehousing/data-classification.md
+      - Data Quality Metrics: labs/snowflake/advanced-warehousing/data-quality-metrics.md
+      - Dynamic Tables: labs/snowflake/advanced-warehousing/dynamic-tables.md
+      - Higher Order Functions: labs/snowflake/advanced-warehousing/higher-order-functions.md
+    - Data Engineering:
+      - Python Basics: labs/snowflake/data-science/python-basics.md
+    - Data Lake:
+      - Coming Soon: labs/snowflake/data-lake/index.md
+    - Classic AI/ML:
+      - Snowpark ML: labs/snowflake/classic-ai-ml/snowpark-ml.md
+    - Gen AI/LLMs:
+      - Cortex AI: labs/snowflake/gen-ai-llms/cortex-ai.md
+      - Embeddings & Vector Search: labs/snowflake/gen-ai-llms/embeddings-vector-search.md
+    - Applications:
+      - Streamlit Apps: labs/snowflake/applications/streamlit-apps.md
+    - Collaboration:
+      - Data Sharing: labs/snowflake/collaboration-sharing/index.md
+    - Admins:
+      - Admin Operations: labs/snowflake/admins-ops/index.md
+    - Resources: labs/snowflake/resources.md
+  - Dev Tools:
+    - Overview: labs/dev-tools/index.md
+    - AI IDEs: labs/dev-tools/ai-ides.md
+    - Cursor IDE: labs/dev-tools/cursor-ide.md
+    - GitHub Copilot: labs/dev-tools/github-copilot.md
+    - Slidev: labs/dev-tools/slidev.md
+    - Terminal CLI: labs/dev-tools/terminal-cli.md
+    - VSCode: labs/dev-tools/vscode.md
+    - Excalidraw: labs/dev-tools/excalidraw.md
+    - Cursor: labs/dev-tools/cursor.md
+    - Bolt.new: labs/dev-tools/bolt-new.md
+  - Blog:
+    - Overview: labs/blog/index.md
+    - Innovation:
+      - Technology Trends: labs/blog/innovation/technology-trends.md
+      - Digital Transformation: labs/blog/innovation/digital-transformation.md
+      - Future of Work: labs/blog/innovation/future-of-work.md
+    - Business:
+      - Data-Driven Decisions: labs/blog/business/data-driven-decisions.md
+      - Team Leadership: labs/blog/business/team-leadership.md
+      - Product Strategy: labs/blog/business/product-strategy.md
+    - Industry:
+      - Data Analytics: labs/blog/industry/data-analytics.md
+      - AI/ML: labs/blog/industry/ai-ml.md
+      - Cloud Computing: labs/blog/industry/cloud-computing.md
+    - Case Studies:
+      - Success Stories: labs/blog/case-studies/success-stories.md
+      - Lessons Learned: labs/blog/case-studies/lessons-learned.md
+      - Best Practices: labs/blog/case-studies/best-practices.md
+    - Speaking:
+      - Conference Talks: labs/blog/speaking/conference-talks.md
+      - Webinars: labs/blog/speaking/webinars.md
+      - Podcasts: labs/blog/speaking/podcasts.md
   - Subscribe: subscribe.md
   - Community: community.md
+  - About: about.md
 
 # Extra
 extra:

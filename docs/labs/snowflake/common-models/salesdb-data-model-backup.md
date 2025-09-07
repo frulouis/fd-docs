@@ -6,12 +6,9 @@ The provided SalesDB data model includes four tables: Customer, Buyer, Client, a
 
 This page contains the following sections:
 
-## Step-by-Step Implementation
+=== "Step-by-Step"
 
-<details open>
-<summary>Click to collapse step-by-step implementation</summary>
-
-### Database Entity Relationship Diagram
+## Database Entity Relationship Diagram
 
 ```mermaid
 erDiagram
@@ -85,7 +82,8 @@ _DemoHub - SalesDB Data Model - Version 1.2.7 (updated 05/23/2024)_
 */
 ```
 
-### 1. DATABASE AND SCHEMA SETUP
+## 1. DATABASE AND SCHEMA SETUP
+
 
 ```sql title="Database and Schema Setup" linenums="1"
 -- +----------------------------------------------------+
@@ -102,7 +100,7 @@ USE SalesDB;
 CREATE OR REPLACE SCHEMA customer;
 ```
 
-### 2. CREATE TABLE OBJECTS
+## 2. CREATE TABLE OBJECTS
 
 ```sql title="Create Database Tables" linenums="10"
 -- +----------------------------------------------------+
@@ -157,7 +155,8 @@ CREATE OR REPLACE TABLE Opportunities (
 );
 ```
 
-### 3. INSERT SAMPLE DATA
+## 3. INSERT SAMPLE DATA
+
 
 ```sql title="Insert Sample Data with Quality Issues" linenums="106"
 -- +----------------------------------------------------+
@@ -226,7 +225,7 @@ VALUES
     (310, 10, 110, 'Partner Referral', 'Closed Won', '2024-06-05', 60000.00, '2024-05-02 14:15:00');   -- Valid
 ```
 
-### 4. CREATE FUNCTIONS AND STORED PROCEDURES
+## 4. CREATE FUNCTIONS AND STORED PROCEDURES
 
 ```sql title="Create Functions and Stored Procedures" linenums="177"
 -- +----------------------------------------------------+
@@ -296,7 +295,8 @@ WHERE SalesStage IN ('Negotiation', 'Proposal')
 AND ExpectedCloseDate BETWEEN CURRENT_DATE AND DATEADD(month, 1, CURRENT_DATE);
 ```
 
-### 5. CREATE TAGS AND APPLY
+## 5. CREATE TAGS AND APPLY
+
 
 ```sql title="Create and Apply Data Tags" linenums="247"
 -- +----------------------------------------------------+
@@ -339,7 +339,8 @@ ALTER TABLE Opportunities MODIFY COLUMN LeadSource SET TAG Lead_Source = 'LeadSo
 ALTER TABLE Opportunities MODIFY COLUMN SalesStage SET TAG Sales_Stage = 'SalesStage';
 ```
 
-### 6. CREATE MASKING AND APPLY TO TAGS/COLUMNS
+## 6. CREATE MASKING AND APPLY TO TAGS/COLUMNS
+
 
 ```sql title="Create Data Masking Policies" linenums="292"
 -- +----------------------------------------------------+
@@ -359,7 +360,8 @@ ALTER TAG PII SET MASKING POLICY mask_pii;
 -- ... (Apply to other PII columns in Buyer and Client tables)
 ```
 
-### 7. RBAC PRIVILEGES SETUP
+## 7. RBAC PRIVILEGES SETUP
+
 
 ```sql title="Setup Role-Based Access Control" linenums="314"
 -- +----------------------------------------------------+
@@ -392,7 +394,7 @@ GRANT SELECT ON TABLE Customer TO ROLE SalesRep;
 GRANT SELECT ON ALL TABLES IN SCHEMA customer TO ROLE SalesManager; -- More access
 ```
 
-### 8. SWITCH TO THE ACCOUNTADMIN ROLE
+## 8. SWITCH TO THE ACCOUNTADMIN ROLE
 
 ```sql title="Switch to AccountAdmin Role" linenums="349"
 -- +----------------------------------------------------+
@@ -410,7 +412,8 @@ GRANT ROLE SalesManager TO USER Fru;
 GRANT ROLE SalesRep TO USER Demo;
 ```
 
-### 9. RESET DEMO ENVIRONMENT
+## 9. RESET DEMO ENVIRONMENT
+
 
 ```sql title="Reset Demo Environment" linenums="367"
 -- +----------------------------------------------------+
@@ -430,14 +433,25 @@ DROP ROLE IF EXISTS SalesRep;
 DROP ROLE IF EXISTS SalesManager;
 ```
 
-</details>
+## Sales Data Analysis Model
 
-## Complete Code
+The provided Snowflake script sets up a comprehensive sales data model which includes tables for customers, buyers, clients, and opportunities, along with sample data and various tagging and role-based access controls (RBAC). With this model, several types of analyses can be performed. 
 
-<details>
-<summary>Click to expand complete implementation</summary>
+For instance, we can analyze customer behavior and segmentation by evaluating closed opportunities, categorizing customers based on their total value, and tracking sales stages to identify bottlenecks in the sales pipeline. 
 
-### Complete SalesDB Implementation
+Additionally, the tagging system for Personally Identifiable Information (PII) and lead sources enhances data governance and compliance. By leveraging stored procedures and views, analysts can easily access high-value customer insights and opportunities likely to close soon, facilitating more informed decision-making and targeted marketing strategies. 
+
+This model also supports efficient role-based access control, ensuring that different user roles have appropriate access to the data. The model's structure, sample data, and defined procedures facilitate a hands-on understanding of Snowflake's capabilities for data management, analysis, and security.
+
+## Resources
+
+- [Complete SalesDB Setup Script](https://complex-teammates-374480.framer.app/demo/salesdb-data-model) - Full implementation from DemoHub
+- [Data Quality Metrics Tutorial](../advanced-warehousing/data-quality-metrics.md) - Quality monitoring
+- [Data Classification Tutorial](../advanced-warehousing/data-classification.md) - Governance implementation
+
+=== "Complete Code"
+
+## Complete SalesDB Implementation
 
 Copy and run this complete script to set up the entire SalesDB data model:
 
@@ -767,110 +781,4 @@ REVOKE ROLE SalesRep FROM USER Demo;
 -- Drop the roles
 DROP ROLE IF EXISTS SalesRep;
 DROP ROLE IF EXISTS SalesManager;
-```
-
-</details>
-
-## LLM Prompt
-
-<details>
-<summary>Click to expand LLM prompt</summary>
-
-### AI Assistant Prompt for SalesDB Implementation
-
-Here's a comprehensive prompt you can use with an LLM to generate similar Snowflake data models:
-
-```
-Create a comprehensive Snowflake data model for a sales management system with the following requirements:
-
-**Database Structure:**
-- Create a database named "SalesDB" with a "customer" schema
-- Design 4 main tables: Customer, Buyer, Client, and Opportunities
-- Include proper primary keys, foreign key relationships, and data types
-- Add LoadDate timestamps with CURRENT_TIMESTAMP() defaults
-
-**Table Specifications:**
-1. **Customer Table**: CustomerID (PK), FirstName, LastName, Email, HomeLocation, ZipCode, VarNumber
-2. **Buyer Table**: BuyerID (PK), CustomerID (FK), FirstName, LastName, Email, Address, PostalCode
-3. **Client Table**: ClientID (PK), BuyerID (FK), ContractStartDate, ContractValue
-4. **Opportunities Table**: OpportunityID (PK), CustomerID (FK), BuyerID (FK), LeadSource, SalesStage, ExpectedCloseDate, Amount
-
-**Data Governance:**
-- Create tags for PII (Personally Identifiable Information) with values: 'Name', 'Email', 'Address'
-- Create tags for Lead_Source with values: 'Partner Referral', 'Web Form', 'Outbound Call', 'Trade Show'
-- Create tags for Sales_Stage with values: 'Prospecting', 'Qualification', 'Proposal', 'Negotiation', 'Closed Won', 'Closed Lost'
-- Apply masking policies for PII data based on user roles
-
-**Functions and Procedures:**
-- Create a function to calculate total closed won value for a customer
-- Create a function to categorize customers (High/Medium/Low Value)
-- Create stored procedures for updating opportunity stages and assigning buyers
-- Create views for high-value customers and opportunities likely to close
-
-**RBAC Setup:**
-- Create SalesRep and SalesManager roles
-- Grant appropriate database, schema, and table privileges
-- Implement role-based data masking
-
-**Sample Data:**
-- Insert realistic sample data with intentional quality issues for testing
-- Include valid records, stale data, invalid emails, missing fields, and duplicates
-- Ensure data demonstrates various sales stages and lead sources
-
-**Additional Requirements:**
-- Include comprehensive comments and documentation
-- Add error handling where appropriate
-- Include a reset script to clean up the environment
-- Make the code production-ready with proper error handling
-
-Please provide the complete implementation with step-by-step organization and ensure all code is properly commented and follows Snowflake best practices.
-```
-
-### Alternative Shorter Prompt
-
-For a quicker implementation, you can use this condensed version:
-
-```
-Generate a Snowflake sales data model with Customer, Buyer, Client, and Opportunities tables. Include PII tagging, RBAC roles (SalesRep/SalesManager), masking policies, sample data with quality issues, and functions for customer value calculation. Provide complete DDL with comments.
-```
-
-### Context for Better Results
-
-When using these prompts, you can add context like:
-
-```
-The model should be suitable for:
-- Educational demonstrations
-- Data quality testing scenarios
-- RBAC and security training
-- Universal Search exploration
-- Sales pipeline analysis
-
-Include realistic business scenarios and ensure the data model supports common sales analytics use cases.
-```
-
-</details>
-
-## Sales Data Analysis Model
-
-The provided Snowflake script sets up a comprehensive sales data model which includes tables for customers, buyers, clients, and opportunities, along with sample data and various tagging and role-based access controls (RBAC). With this model, several types of analyses can be performed. 
-
-For instance, we can analyze customer behavior and segmentation by evaluating closed opportunities, categorizing customers based on their total value, and tracking sales stages to identify bottlenecks in the sales pipeline. 
-
-Additionally, the tagging system for Personally Identifiable Information (PII) and lead sources enhances data governance and compliance. By leveraging stored procedures and views, analysts can easily access high-value customer insights and opportunities likely to close soon, facilitating more informed decision-making and targeted marketing strategies. 
-
-This model also supports efficient role-based access control, ensuring that different user roles have appropriate access to the data. The model's structure, sample data, and defined procedures facilitate a hands-on understanding of Snowflake's capabilities for data management, analysis, and security.
-
-## Resources
-
-- [Complete SalesDB Setup Script](https://complex-teammates-374480.framer.app/demo/salesdb-data-model) - Full implementation from DemoHub
-- [Data Quality Metrics Tutorial](../advanced-warehousing/data-quality-metrics.md) - Quality monitoring
-- [Data Classification Tutorial](../advanced-warehousing/data-classification.md) - Governance implementation
-
----
-
-## Next Article
-
-[:octicons-arrow-right-24: CaresDB Data Model](caresdb-data-model.md){ .md-button .md-button--primary }
-
-Continue exploring data models with our healthcare-focused CaresDB implementation, featuring HIPAA compliance and medical data architecture.
+``````

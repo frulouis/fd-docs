@@ -467,3 +467,11 @@ SELECT 'Alert', COUNT(*) FROM Alert;
 - [IoTDB Setup Script](https://complex-teammates-374480.framer.app/demo/iotdb) - Complete implementation
 - [Dynamic Tables Tutorial](../engineering-lake/dynamic-tables.md) - Real-time data streaming
 - [Snowpark ML Tutorial](../classic-ai-ml/snowpark-ml.md) - Predictive maintenance models
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: MediSnowDB Data Model](medisnowdb-data-model.md){ .md-button .md-button--primary }
+
+Dive deeper into medical data warehousing with our advanced MediSnowDB implementation, featuring comprehensive healthcare analytics.

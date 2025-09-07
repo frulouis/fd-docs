@@ -39,3 +39,11 @@ To cite this content, please use:
 ---
 
 *Fru Dev – empowering developers with practical skills for the modern data world.*
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: Labs Overview](labs/index.md){ .md-button .md-button--primary }
+
+Explore our comprehensive learning labs, featuring Snowflake guides, dev tools, and thought leadership content.

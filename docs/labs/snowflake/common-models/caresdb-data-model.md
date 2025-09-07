@@ -392,3 +392,11 @@ SELECT 'Visit', COUNT(*) FROM Visit;
 - [CaresDB Setup Script](https://complex-teammates-374480.framer.app/demo/caresdb-data-model) - Complete implementation
 - [Data Classification Tutorial](../advanced-warehousing/data-classification.md) - HIPAA compliance
 - [Cortex AI Tutorial](../gen-ai-llms/cortex-ai.md) - Medical text analysis
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: IoTDB Data Model](iotdb-data-model.md){ .md-button .md-button--primary }
+
+Explore IoT data management with our comprehensive IoTDB implementation, featuring sensor data processing and real-time analytics.

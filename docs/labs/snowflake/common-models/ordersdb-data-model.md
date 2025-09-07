@@ -450,3 +450,11 @@ SELECT 'OrderItem', COUNT(*) FROM OrderItem;
 - [OrdersDB Setup Script](https://complex-teammates-374480.framer.app/demo/ordersdb-data-model) - Complete implementation
 - [Dynamic Tables Tutorial](../engineering-lake/dynamic-tables.md) - Real-time inventory tracking
 - [Snowpark ML Tutorial](../classic-ai-ml/snowpark-ml.md) - Recommendation systems
+
+---
+
+## Next Article
+
+[:octicons-arrow-right-24: Data Classification](../advanced-warehousing/data-classification.md){ .md-button .md-button--primary }
+
+Learn advanced data governance techniques with our comprehensive data classification guide, featuring tagging, masking, and compliance strategies.
