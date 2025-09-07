@@ -857,3 +857,285 @@ body .md-sidebar--secondary {
     max-width: 100% !important;
   }
 }
+
+/* Code cell styling - Black theme - FORCE OVERRIDE */
+.highlight,
+.highlighttable,
+.highlight table,
+.highlighttable table,
+.highlighttable tr,
+.highlighttable td,
+.highlighttable th,
+.highlight pre,
+.highlight code,
+.highlighttable pre,
+.highlighttable code,
+.highlighttable .linenos,
+.highlighttable .linenodiv,
+.highlighttable .normal {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #333333 !important;
+}
+
+.highlight pre,
+.highlighttable pre,
+.highlight pre code,
+.highlighttable pre code {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.highlight table,
+.highlighttable table {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #333333 !important;
+}
+
+.highlighttable tr,
+.highlighttable td,
+.highlighttable th {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.highlighttable .linenos,
+.highlighttable .linenodiv {
+  background-color: #000000 !important;
+  color: #888888 !important;
+  border-right: 1px solid #333333 !important;
+}
+
+/* Code syntax highlighting - Black background with white text */
+.highlight .k { color: #ffffff !important; } /* Keywords */
+.highlight .kt { color: #ffffff !important; } /* Keyword types */
+.highlight .kd { color: #ffffff !important; } /* Keyword declarations */
+.highlight .kn { color: #ffffff !important; } /* Keyword namespaces */
+.highlight .kp { color: #ffffff !important; } /* Keyword pseudo */
+.highlight .kr { color: #ffffff !important; } /* Keyword reserved */
+.highlight .s { color: #ffffff !important; } /* Strings */
+.highlight .s1 { color: #ffffff !important; } /* String single */
+.highlight .s2 { color: #ffffff !important; } /* String double */
+.highlight .sb { color: #ffffff !important; } /* String backtick */
+.highlight .sc { color: #ffffff !important; } /* String char */
+.highlight .sd { color: #ffffff !important; } /* String doc */
+.highlight .sx { color: #ffffff !important; } /* String other */
+.highlight .ss { color: #ffffff !important; } /* String symbol */
+.highlight .c { color: #888888 !important; } /* Comments */
+.highlight .c1 { color: #888888 !important; } /* Comment single */
+.highlight .cm { color: #888888 !important; } /* Comment multiline */
+.highlight .cp { color: #888888 !important; } /* Comment preproc */
+.highlight .cs { color: #888888 !important; } /* Comment special */
+.highlight .n { color: #ffffff !important; } /* Names */
+.highlight .na { color: #ffffff !important; } /* Name attribute */
+.highlight .nb { color: #ffffff !important; } /* Name builtin */
+.highlight .nc { color: #ffffff !important; } /* Name class */
+.highlight .no { color: #ffffff !important; } /* Name constant */
+.highlight .nd { color: #ffffff !important; } /* Name decorator */
+.highlight .ni { color: #ffffff !important; } /* Name entity */
+.highlight .ne { color: #ffffff !important; } /* Name exception */
+.highlight .nf { color: #ffffff !important; } /* Name function */
+.highlight .nl { color: #ffffff !important; } /* Name label */
+.highlight .nn { color: #ffffff !important; } /* Name namespace */
+.highlight .nt { color: #ffffff !important; } /* Name tag */
+.highlight .nv { color: #ffffff !important; } /* Name variable */
+.highlight .o { color: #ffffff !important; } /* Operator */
+.highlight .ow { color: #ffffff !important; } /* Operator word */
+.highlight .p { color: #ffffff !important; } /* Punctuation */
+.highlight .pi { color: #ffffff !important; } /* Punctuation indicator */
+.highlight .pl { color: #ffffff !important; } /* Punctuation list */
+.highlight .pn { color: #ffffff !important; } /* Punctuation name */
+.highlight .py { color: #ffffff !important; } /* Punctuation yaml */
+.highlight .w { color: #ffffff !important; } /* Whitespace */
+
+/* Inline code styling */
+code {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #333333 !important;
+  padding: 0.125rem 0.25rem !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Code block copy button styling */
+.highlight .md-clipboard {
+  color: #ffffff !important;
+  background-color: #333333 !important;
+  border: 1px solid #555555 !important;
+}
+
+.highlight .md-clipboard:hover {
+  background-color: #555555 !important;
+  color: #ffffff !important;
+}
+
+/* Dark mode support for code cells */
+[data-md-color-scheme="slate"] .highlight {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
+
+[data-md-color-scheme="slate"] .highlight pre {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+[data-md-color-scheme="slate"] .highlight pre code {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+[data-md-color-scheme="slate"] code {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
+
+/* ULTRA AGGRESSIVE CODE OVERRIDE - FORCE BLACK ON EVERYTHING */
+div[class*="highlight"],
+div[class*="highlighttable"],
+table[class*="highlight"],
+pre[class*="highlight"],
+code[class*="highlight"],
+.highlight *,
+.highlighttable *,
+.language-sql,
+.language-text,
+.language-python,
+.language-javascript,
+.language-html,
+.language-css,
+.language-yaml,
+.language-json,
+.language-bash,
+.language-shell,
+.language-sql *,
+.language-text *,
+.language-python *,
+.language-javascript *,
+.language-html *,
+.language-css *,
+.language-yaml *,
+.language-json *,
+.language-bash *,
+.language-shell * {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Force black on all code elements regardless of class */
+div[class*="language-"],
+pre[class*="language-"],
+code[class*="language-"],
+div[class*="language-"] *,
+pre[class*="language-"] *,
+code[class*="language-"] * {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Override any theme defaults */
+.md-typeset .highlight,
+.md-typeset .highlighttable,
+.md-typeset .highlight pre,
+.md-typeset .highlight code,
+.md-typeset .highlighttable pre,
+.md-typeset .highlighttable code,
+.md-typeset .highlighttable table,
+.md-typeset .highlighttable tr,
+.md-typeset .highlighttable td,
+.md-typeset .highlighttable th {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #333333 !important;
+}
+
+/* Force override on all syntax elements */
+.highlight .k,
+.highlight .kt,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .sx,
+.highlight .ss,
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .nv,
+.highlight .o,
+.highlight .ow,
+.highlight .p,
+.highlight .pi,
+.highlight .pl,
+.highlight .pn,
+.highlight .py,
+.highlight .w,
+.highlighttable .k,
+.highlighttable .kt,
+.highlighttable .kd,
+.highlighttable .kn,
+.highlighttable .kp,
+.highlighttable .kr,
+.highlighttable .s,
+.highlighttable .s1,
+.highlighttable .s2,
+.highlighttable .sb,
+.highlighttable .sc,
+.highlighttable .sd,
+.highlighttable .sx,
+.highlighttable .ss,
+.highlighttable .n,
+.highlighttable .na,
+.highlighttable .nb,
+.highlighttable .nc,
+.highlighttable .no,
+.highlighttable .nd,
+.highlighttable .ni,
+.highlighttable .ne,
+.highlighttable .nf,
+.highlighttable .nl,
+.highlighttable .nn,
+.highlighttable .nt,
+.highlighttable .nv,
+.highlighttable .o,
+.highlighttable .ow,
+.highlighttable .p,
+.highlighttable .pi,
+.highlighttable .pl,
+.highlighttable .pn,
+.highlighttable .py,
+.highlighttable .w {
+  color: #ffffff !important;
+}
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cp,
+.highlight .cs,
+.highlighttable .c,
+.highlighttable .c1,
+.highlighttable .cm,
+.highlighttable .cp,
+.highlighttable .cs {
+  color: #888888 !important;
+}

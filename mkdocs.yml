@@ -74,6 +74,16 @@ plugins:
   - search
   - minify:
       minify_html: true
+  - mermaid2:
+      arguments:
+        theme: dark
+        themeVariables:
+          primaryColor: '#ff6b6b'
+          primaryTextColor: '#ffffff'
+          primaryBorderColor: '#7C0000'
+          lineColor: '#F8B229'
+          secondaryColor: '#006100'
+          tertiaryColor: '#fff'
 
 # Markdown extensions
 markdown_extensions:
@@ -113,11 +123,7 @@ markdown_extensions:
       repo: fd-labs
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
