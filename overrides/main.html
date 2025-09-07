@@ -1,5 +1,21 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {{ super() }}
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYG7CTKFTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-YYG7CTKFTF', {
+      'anonymize_ip': true,
+      'respect_dnt': true
+    });
+  </script>
+{% endblock %}
+
 {% block scripts %}
   {{ super() }}
   <script>
