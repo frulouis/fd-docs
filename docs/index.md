@@ -2,7 +2,7 @@
 
 Hi, I'm Fru 👋 — I build, experiment, and share what I learn at the intersection of data, AI/ML, and modern development tools.
 
-!!! quote "🌏 Curiosity, meet developing."
+!!! quote "Curiosity, meet DEVeloping."
     I'm Fru, and Fru Labs is my sandbox where curiosity collides with code. From AI and data to Cursor, Snowflake, and Slidev, this is where concepts turn into experiments — and experiments turn into tools, tutorials, and communities. Less theory. More Developing.
  
 
