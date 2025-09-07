@@ -356,6 +356,128 @@ body.homepage .admonition.quote .admonition-title::before {
   border-bottom: 1px solid #166534 !important;
 }
 
+/* Global green theme for all interactive elements */
+:root {
+  --md-primary-fg-color: #16a34a;
+  --md-primary-fg-color--light: #22c55e;
+  --md-primary-fg-color--dark: #15803d;
+  --md-accent-fg-color: #22c55e;
+  --md-accent-fg-color--transparent: rgba(34, 197, 94, 0.1);
+}
+
+/* Links and hover states */
+a {
+  color: #16a34a !important;
+}
+
+a:hover {
+  color: #22c55e !important;
+}
+
+/* Buttons */
+.md-button {
+  background-color: #16a34a !important;
+  border-color: #16a34a !important;
+  color: white !important;
+}
+
+.md-button:hover {
+  background-color: #22c55e !important;
+  border-color: #22c55e !important;
+}
+
+.md-button--primary {
+  background-color: #16a34a !important;
+  border-color: #16a34a !important;
+}
+
+.md-button--primary:hover {
+  background-color: #22c55e !important;
+  border-color: #22c55e !important;
+}
+
+/* Navigation and tabs */
+.md-tabs__link--active {
+  color: #22c55e !important;
+}
+
+.md-tabs__link:hover {
+  color: #22c55e !important;
+}
+
+/* Search highlighting */
+.md-search-result__meta {
+  color: #16a34a !important;
+}
+
+.md-search-result__title a {
+  color: #16a34a !important;
+}
+
+/* Code highlighting */
+.highlight .c1, .highlight .cm {
+  color: #16a34a !important;
+}
+
+/* Admonitions */
+.admonition.info {
+  border-color: #22c55e !important;
+}
+
+.admonition.info .admonition-title {
+  background-color: #dcfce7 !important;
+  color: #16a34a !important;
+}
+
+.admonition.info .admonition-title::before {
+  color: #22c55e !important;
+}
+
+/* Dark mode support for global green theme */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #4ade80;
+  --md-primary-fg-color--light: #22c55e;
+  --md-primary-fg-color--dark: #16a34a;
+  --md-accent-fg-color: #4ade80;
+  --md-accent-fg-color--transparent: rgba(74, 222, 128, 0.1);
+}
+
+[data-md-color-scheme="slate"] a {
+  color: #4ade80 !important;
+}
+
+[data-md-color-scheme="slate"] a:hover {
+  color: #22c55e !important;
+}
+
+[data-md-color-scheme="slate"] .md-button {
+  background-color: #4ade80 !important;
+  border-color: #4ade80 !important;
+  color: #0f1f0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-button:hover {
+  background-color: #22c55e !important;
+  border-color: #22c55e !important;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  color: #4ade80 !important;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #4ade80 !important;
+}
+
+[data-md-color-scheme="slate"] .admonition.info {
+  border-color: #4ade80 !important;
+}
+
+[data-md-color-scheme="slate"] .admonition.info .admonition-title {
+  background-color: #14532d !important;
+  color: #4ade80 !important;
+}
+
 /* Custom button styles */
 .md-button {
   border-radius: 0.375rem;
