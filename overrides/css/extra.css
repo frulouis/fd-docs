@@ -671,3 +671,51 @@ a:hover {
     break-inside: avoid;
   }
 }
+
+/* Table of Contents positioning - move to right side */
+.md-sidebar--secondary {
+  order: 2;
+}
+
+.md-content {
+  order: 1;
+}
+
+/* Ensure TOC is visible on the right */
+.md-sidebar--secondary {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* TOC styling */
+.md-nav--secondary {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  padding-left: 1rem;
+}
+
+.md-nav--secondary .md-nav__title {
+  color: #16a34a !important;
+  font-weight: 600 !important;
+}
+
+.md-nav--secondary .md-nav__link {
+  color: #16a34a !important;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  color: #22c55e !important;
+}
+
+/* Dark mode TOC styling */
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__title {
+  color: #4ade80 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
+  color: #4ade80 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover {
+  color: #22c55e !important;
+}

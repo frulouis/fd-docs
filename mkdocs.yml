@@ -90,6 +90,9 @@ markdown_extensions:
   - toc:
       permalink: true
       title: On this page
+      permalink_title: Link to this section
+      baselevel: 2
+      anchorlink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
