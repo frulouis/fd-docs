@@ -199,6 +199,31 @@
   opacity: 1 !important;
 }
 
+/* Hide sidebar only on homepage */
+/* Use class-based approach for better compatibility */
+body.homepage .md-sidebar--primary,
+body.homepage .md-sidebar--secondary {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Ensure main content takes full width on homepage */
+body.homepage .md-content {
+  margin-left: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Ensure main content area adjusts properly on homepage */
+body.homepage .md-main__inner {
+  display: block !important;
+}
+
+body.homepage .md-content {
+  flex: none !important;
+}
+
 /* Custom header styling - black background with white text */
 .md-header {
   background-color: #000000 !important;
