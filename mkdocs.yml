@@ -41,22 +41,18 @@ theme:
     - search.share
     - search.suggest
     - search.boost
-    - toc.follow
-    - toc.integrate
   palette:
-    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: black
+      accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: black
+      primary: green
+      accent: green
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -93,6 +89,8 @@ markdown_extensions:
       permalink_title: Link to this section
       baselevel: 2
       anchorlink: true
+      toc_depth: 3
+      separator: "-"
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -133,11 +131,13 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - About: about.md
   - Labs: 
     - Overview: labs/index.md
     - Snowflake: 
       - Overview: labs/snowflake/index.md
       - Common Models:
+        - Overview: labs/snowflake/common-models/index.md
         - SalesDB: labs/snowflake/common-models/salesdb-data-model.md
         - CaresDB: labs/snowflake/common-models/caresdb-data-model.md
         - IoTDB: labs/snowflake/common-models/iotdb-data-model.md
@@ -165,7 +165,7 @@ nav:
         - Admin Operations: labs/snowflake/admins-ops/index.md
       - Resources: labs/snowflake/resources.md
     - Dev Tools: labs/dev-tools/index.md
-    - Blog: labs/thought-leadership/index.md
+    - Blog: labs/blog/index.md
   - Subscribe: subscribe.md
   - Community: community.md
 

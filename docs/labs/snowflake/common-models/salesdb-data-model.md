@@ -2,6 +2,10 @@
 
 The provided SalesDB data model includes four tables: Customer, Buyer, Client, and Opportunities. It incorporates comments and tags to enhance search capabilities and security. Additionally, functions, stored procedures, and views are provided to demonstrate how Universal Search can be used for deeper analysis.
 
+## Table of Contents
+
+This page contains the following sections:
+
 ## Database Entity Relationship Diagram
 
 ```mermaid

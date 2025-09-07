@@ -3,8 +3,8 @@
 {% block scripts %}
   {{ super() }}
   <script>
-    // Add homepage class to body when on the homepage
     document.addEventListener('DOMContentLoaded', function() {
+      // Simple homepage detection
       const currentPath = window.location.pathname;
       if (currentPath === '/' || currentPath === '/index.html' || currentPath.endsWith('/')) {
         document.body.classList.add('homepage');

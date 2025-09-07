@@ -199,30 +199,7 @@
   opacity: 1 !important;
 }
 
-/* Hide sidebar only on homepage */
-/* Use class-based approach for better compatibility */
-body.homepage .md-sidebar--primary,
-body.homepage .md-sidebar--secondary {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-}
-
-/* Ensure main content takes full width on homepage */
-body.homepage .md-content {
-  margin-left: 0 !important;
-  max-width: none !important;
-  width: 100% !important;
-}
-
-/* Ensure main content area adjusts properly on homepage */
-body.homepage .md-main__inner {
-  display: block !important;
-}
-
-body.homepage .md-content {
-  flex: none !important;
-}
+/* Simple homepage layout - keep everything visible */
 
 /* Custom header styling - black background with white text */
 .md-header {
@@ -672,17 +649,69 @@ a:hover {
   }
 }
 
-/* Table of Contents positioning - move to right side */
-.md-sidebar--secondary {
-  order: 2;
+/* CUSTOM TOC POSITIONING - Force right side placement */
+.md-main__inner {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0 !important;
 }
 
+/* Content area takes up most space */
 .md-content {
-  order: 1;
+  order: 1 !important;
+  flex: 1 1 0% !important;
+  margin-right: 0 !important;
+  max-width: calc(100% - 12.1rem) !important;
 }
 
-/* Ensure TOC is visible on the right */
+/* Custom TOC sidebar - ALWAYS on the right */
+.custom-toc-sidebar,
 .md-sidebar--secondary {
+  order: 2 !important;
+  flex: 0 0 12.1rem !important;
+  width: 12.1rem !important;
+  max-width: 12.1rem !important;
+  min-width: 12.1rem !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: sticky !important;
+  top: 2.4rem !important;
+  height: calc(100vh - 2.4rem) !important;
+  overflow-y: auto !important;
+  padding: 0 0 0 1rem !important;
+  border-left: 1px solid var(--md-default-fg-color--lightest) !important;
+  background-color: var(--md-default-bg-color) !important;
+  z-index: 1 !important;
+}
+
+/* Force visibility for custom TOC */
+.custom-toc-sidebar {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* More aggressive TOC forcing */
+.md-sidebar--secondary,
+.md-sidebar--secondary[hidden],
+.md-sidebar--secondary.hidden {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Override Material theme's TOC hiding */
+.md-main[data-md-level] .md-sidebar--secondary {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force TOC to show on all pages */
+body .md-sidebar--secondary {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -690,26 +719,75 @@ a:hover {
 
 /* TOC styling */
 .md-nav--secondary {
-  border-left: 1px solid var(--md-default-fg-color--lightest);
-  padding-left: 1rem;
+  border-left: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
 }
 
 .md-nav--secondary .md-nav__title {
   color: #16a34a !important;
   font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-bottom: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest) !important;
+  display: block !important;
+}
+
+.md-nav--secondary .md-nav__list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.md-nav--secondary .md-nav__item {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
 }
 
 .md-nav--secondary .md-nav__link {
   color: #16a34a !important;
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+  padding: 0.25rem 0 !important;
+  display: block !important;
+  text-decoration: none !important;
+  border-radius: 0.25rem !important;
+  transition: all 0.2s ease !important;
+  margin: 0 !important;
 }
 
 .md-nav--secondary .md-nav__link:hover {
   color: #22c55e !important;
+  background-color: rgba(34, 197, 94, 0.1) !important;
+  padding-left: 0.5rem !important;
+  text-decoration: none !important;
+}
+
+.md-nav--secondary .md-nav__link--active {
+  color: #22c55e !important;
+  font-weight: 600 !important;
+  background-color: rgba(34, 197, 94, 0.1) !important;
+  padding-left: 0.5rem !important;
+}
+
+/* Nested TOC items */
+.md-nav--secondary .md-nav__item--nested > .md-nav__link {
+  font-weight: 500 !important;
+}
+
+.md-nav--secondary .md-nav__item--nested .md-nav__link {
+  padding-left: 1rem !important;
+  font-size: 0.75rem !important;
 }
 
 /* Dark mode TOC styling */
 [data-md-color-scheme="slate"] .md-nav--secondary .md-nav__title {
   color: #4ade80 !important;
+  border-bottom-color: var(--md-default-fg-color--lightest) !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
@@ -718,4 +796,64 @@ a:hover {
 
 [data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover {
   color: #22c55e !important;
+  background-color: rgba(74, 222, 128, 0.1) !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link--active {
+  color: #22c55e !important;
+  background-color: rgba(74, 222, 128, 0.1) !important;
+}
+
+/* FORCE HIDE TOC from left sidebar - only show on right */
+.md-sidebar--primary .md-nav--secondary,
+.md-sidebar--primary .md-nav--secondary *,
+.md-sidebar--primary [class*="md-nav--secondary"],
+.md-sidebar--primary [class*="toc"],
+.md-sidebar--primary [class*="table-of-contents"],
+.md-sidebar--primary .md-nav__title[aria-label*="On this page"],
+.md-sidebar--primary .md-nav__title[aria-label*="Table of contents"],
+.md-sidebar--primary .md-nav__title[aria-label*="Contents"],
+.md-sidebar--primary .md-nav__item:has(.md-nav__title[aria-label*="On this page"]),
+.md-sidebar--primary .md-nav__item:has(.md-nav__title[aria-label*="Table of contents"]),
+.md-sidebar--primary .md-nav__item:has(.md-nav__title[aria-label*="Contents"]),
+.md-sidebar--primary .md-nav__list:has(.md-nav__item:has(.md-nav__title[aria-label*="On this page"])),
+.md-sidebar--primary .md-nav__list:has(.md-nav__item:has(.md-nav__title[aria-label*="Table of contents"])),
+.md-sidebar--primary .md-nav__list:has(.md-nav__item:has(.md-nav__title[aria-label*="Contents"])) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+
+/* Additional aggressive hiding for any remaining TOC elements */
+.md-sidebar--primary *[aria-label*="On this page"],
+.md-sidebar--primary *[aria-label*="Table of contents"],
+.md-sidebar--primary *[aria-label*="Contents"],
+.md-sidebar--primary *[class*="toc"],
+.md-sidebar--primary *[class*="table-of-contents"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+
+/* Responsive TOC - hide on smaller screens */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--secondary {
+    display: none !important;
+  }
+
+  .md-content {
+    max-width: 100% !important;
+  }
 }
