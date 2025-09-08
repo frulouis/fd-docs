@@ -1,0 +1,18 @@
+-- Drop tables
+DROP TABLE IF EXISTS hr.employees;
+DROP TABLE IF EXISTS hr.departments;
+DROP TABLE IF EXISTS hr.payroll;
+DROP TABLE IF EXISTS hr.benefits;
+DROP TABLE IF EXISTS hr.performance_reviews;
+DROP TABLE IF EXISTS hr.time_off;
+
+-- Drop tags
+DROP TAG IF EXISTS hr.EMAIL_TAG;
+DROP TAG IF EXISTS hr.PHONE_TAG;
+DROP TAG IF EXISTS hr.SSN_TAG;
+DROP TAG IF EXISTS hr.SALARY_TAG;
+DROP TAG IF EXISTS hr.PII_TAG;
+
+-- Drop schema and database
+DROP SCHEMA IF EXISTS hr;
+DROP DATABASE IF EXISTS hrdb; 

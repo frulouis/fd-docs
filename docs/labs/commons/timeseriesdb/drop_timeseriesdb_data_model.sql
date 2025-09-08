@@ -1,0 +1,13 @@
+-- Drop tables
+DROP TABLE IF EXISTS ts.market_data;
+DROP TABLE IF EXISTS ts.sensor_time_series;
+
+-- Drop tags
+DROP TAG IF EXISTS ts.TIME_SERIES_DATA_TAG;
+DROP TAG IF EXISTS ts.FINANCIAL_DATA_TAG;
+DROP TAG IF EXISTS ts.SENSOR_DATA_TAG;
+DROP TAG IF EXISTS ts.JSON_DATA_TAG;
+
+-- Drop schema and database
+DROP SCHEMA IF EXISTS ts;
+DROP DATABASE IF EXISTS timeseriesdb; 

@@ -18,6 +18,7 @@ theme:
     repo: fontawesome/brands/github
   features:
     - announce.dismiss
+    - navigation.path
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -31,7 +32,6 @@ theme:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
-    - navigation.prune
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -136,18 +136,20 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
-  - Labs: labs/index.md
+  - Home: 
+    - Overview: index.md
+    - Commons: labs/commons/index.md
+    - Dev Tools: labs/dev-tools/index.md
+    - Snowflake: labs/snowflake/index.md
+    - Blog: labs/blog/index.md
+  - Labs:
+    - Overview: labs/index.md
+    - Commons: labs/commons/index.md
+    - Dev Tools: labs/dev-tools/index.md
+    - Snowflake: labs/snowflake/index.md
+    - Blog: labs/blog/index.md
   - Snowflake: 
     - Overview: labs/snowflake/index.md
-    - Common Models:
-      - Overview: labs/snowflake/common-models/index.md
-      - SalesDB: labs/snowflake/common-models/salesdb-data-model.md
-      - CaresDB: labs/snowflake/common-models/caresdb-data-model.md
-      - IoTDB: labs/snowflake/common-models/iotdb-data-model.md
-      - MediSnowDB: labs/snowflake/common-models/medisnowdb-data-model.md
-      - Tab Test: labs/snowflake/common-models/tab-test-page.md
-      - OrdersDB: labs/snowflake/common-models/ordersdb-data-model.md
     - Data Warehousing:
       - Data Classification: labs/snowflake/advanced-warehousing/data-classification.md
       - Data Quality Metrics: labs/snowflake/advanced-warehousing/data-quality-metrics.md
@@ -172,46 +174,77 @@ nav:
   - Dev Tools:
     - Overview: labs/dev-tools/index.md
     - AI IDEs: labs/dev-tools/ai-ides/index.md
-    - Anthropic Claude CLI: labs/dev-tools/anthropic/claude-cli.md
     - AnythingLLM: labs/dev-tools/anythingllm/index.md
     - Artillery: labs/dev-tools/artillery/index.md
-    - AWS: labs/dev-tools/aws/index.md
+    - AWS:
+        - Overview: labs/dev-tools/aws/index.md
+        - EC2 Basics: labs/dev-tools/aws/ec2-basics.md
+        - Lambda Basics: labs/dev-tools/aws/lambda-basics.md
+        - S3 Basics: labs/dev-tools/aws/s3-basics.md
     - Azure: labs/dev-tools/azure/index.md
     - Bitbucket: labs/dev-tools/bitbucket/index.md
     - Bolt.new: labs/dev-tools/bolt-new/index.md
-    - Claude CLI: labs/dev-tools/anthropic/claude-cli.md
-    - CLI Tools: labs/dev-tools/cli/
+    - Anthropic:
+        - Overview: labs/dev-tools/anthropic/index.md
+        - Claude CLI: labs/dev-tools/anthropic/claude-cli.md
+    - CLI: labs/dev-tools/cli/index.md
     - Cursor: labs/dev-tools/cursor/index.md
-    - Cursor IDE: labs/dev-tools/cursor-ide/index.md
-    - Databricks: labs/dev-tools/databricks/
-    - Dataiku: labs/dev-tools/dataiku/
+    - Databricks: labs/dev-tools/databricks/index.md
+    - Dataiku: labs/dev-tools/dataiku/index.md
     - DBT: labs/dev-tools/dbt/index.md
-    - DeepSeek: labs/dev-tools/deepseek/
-    - DLT: labs/dev-tools/dlt/
-    - Docker: labs/dev-tools/docker/index.md
+    - DeepSeek: labs/dev-tools/deepseek/index.md 
+    - DLT: labs/dev-tools/dlt/index.md
+    - Docker:
+        - Overview: labs/dev-tools/docker/index.md
+        - Dockerfile: labs/dev-tools/docker/dockerfile-guide.md
+        - Docker Compose: labs/dev-tools/docker/docker-compose-guide.md
     - Excalidraw: labs/dev-tools/excalidraw/index.md
     - GCP: labs/dev-tools/gcp/index.md
     - GitHub Copilot: labs/dev-tools/github-copilot/index.md
-    - Hugging Face: labs/dev-tools/huggingface/
-    - Java: labs/dev-tools/java/
-    - JMeter Load Testing: labs/dev-tools/jmeter/snowflake-load-testing.md
-    - Kafka: labs/dev-tools/kafka/
+    - Hugging Face: labs/dev-tools/huggingface/index.md
+    - Java: labs/dev-tools/java/index.md
+    - JMeter:
+        - Overview: labs/dev-tools/jmeter/index.md
+        - Snowflake Load Testing: labs/dev-tools/jmeter/snowflake-load-testing.md
+    - Kafka: labs/dev-tools/kafka/index.md
     - Kubernetes: labs/dev-tools/kubernetes/index.md
-    - MCP: labs/dev-tools/mcp/
-    - Microsoft: labs/dev-tools/microsoft/
-    - Mistral: labs/dev-tools/mistral/
-    - NVIDIA: labs/dev-tools/nvidia/
-    - Ollama: labs/dev-tools/ollama/
-    - OpenAI Codex CLI: labs/dev-tools/openai/codex-cli.md
-    - PyPI: labs/dev-tools/pypi/
-    - Python: labs/dev-tools/python/
-    - SchemaChange: labs/dev-tools/schemachange/
+    - MCP: labs/dev-tools/mcp/index.md
+    - Microsoft: labs/dev-tools/microsoft/index.md
+    - Mistral: labs/dev-tools/mistral/index.md
+    - NVIDIA: labs/dev-tools/nvidia/index.md
+    - Ollama: labs/dev-tools/ollama/index.md
+    - OpenAI:
+        - Overview: labs/dev-tools/openai/index.md
+        - Codex CLI: labs/dev-tools/openai/codex-cli.md
+    - PyPI: labs/dev-tools/pypi/index.md
+    - Python: labs/dev-tools/python/index.md
+    - SchemaChange: labs/dev-tools/schemachange/index.md
     - SliDev (Slidev): labs/dev-tools/slidev/index.md
-    - Streamlit: labs/dev-tools/streamlit/
-    - Talend: labs/dev-tools/talend/
+    - Streamlit: labs/dev-tools/streamlit/index.md
+    - Talend: labs/dev-tools/talend/index.md
     - Terminal CLI: labs/dev-tools/terminal-cli/index.md
     - Terraform: labs/dev-tools/terraform/index.md
     - VSCode: labs/dev-tools/vscode/index.md
+  - Commons:
+    - Overview: labs/commons/index.md
+    - Assets Model: labs/commons/assetsdb/index.md
+    - Cares Model: labs/commons/caresdb/index.md
+    - Customers Model: labs/commons/customersdb/index.md
+    - Devices Model: labs/commons/devicesdb/index.md
+    - Finance Model: labs/commons/financedb/index.md
+    - Geospatial Model: labs/commons/geospatialdb/index.md
+    - HR Model: labs/commons/hrdb/index.md
+    - Inventory Model: labs/commons/inventorydb/index.md
+    - IoT Model: labs/commons/iotdb/index.md
+    - JSON Model: labs/commons/jsondb/index.md
+    - Legal Model: labs/commons/legaldb/index.md
+    - Marketing Model: labs/commons/marketingdb/index.md
+    - Orders Model: labs/commons/ordersdb/index.md
+    - Retail Model: labs/commons/retaildb/index.md
+    - Sales Model: labs/commons/salesdb/index.md
+    - Security Model: labs/commons/securitydb/index.md
+    - Suppliers Model: labs/commons/suppliersdb/index.md
+    - Time Series Model: labs/commons/timeseriesdb/index.md
   - Blog:
     - Overview: labs/blog/index.md
     - Innovation:
