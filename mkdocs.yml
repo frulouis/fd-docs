@@ -171,15 +171,47 @@ nav:
     - Resources: labs/snowflake/resources.md
   - Dev Tools:
     - Overview: labs/dev-tools/index.md
-    - AI IDEs: labs/dev-tools/ai-ides.md
-    - Cursor IDE: labs/dev-tools/cursor-ide.md
-    - GitHub Copilot: labs/dev-tools/github-copilot.md
-    - Slidev: labs/dev-tools/slidev.md
-    - Terminal CLI: labs/dev-tools/terminal-cli.md
-    - VSCode: labs/dev-tools/vscode.md
-    - Excalidraw: labs/dev-tools/excalidraw.md
-    - Cursor: labs/dev-tools/cursor.md
-    - Bolt.new: labs/dev-tools/bolt-new.md
+    - AI IDEs: labs/dev-tools/ai-ides/index.md
+    - Anthropic Claude CLI: labs/dev-tools/anthropic/claude-cli.md
+    - AnythingLLM: labs/dev-tools/anythingllm/index.md
+    - Artillery: labs/dev-tools/artillery/index.md
+    - AWS: labs/dev-tools/aws/index.md
+    - Azure: labs/dev-tools/azure/index.md
+    - Bitbucket: labs/dev-tools/bitbucket/index.md
+    - Bolt.new: labs/dev-tools/bolt-new/index.md
+    - Claude CLI: labs/dev-tools/anthropic/claude-cli.md
+    - CLI Tools: labs/dev-tools/cli/
+    - Cursor: labs/dev-tools/cursor/index.md
+    - Cursor IDE: labs/dev-tools/cursor-ide/index.md
+    - Databricks: labs/dev-tools/databricks/
+    - Dataiku: labs/dev-tools/dataiku/
+    - DBT: labs/dev-tools/dbt/index.md
+    - DeepSeek: labs/dev-tools/deepseek/
+    - DLT: labs/dev-tools/dlt/
+    - Docker: labs/dev-tools/docker/index.md
+    - Excalidraw: labs/dev-tools/excalidraw/index.md
+    - GCP: labs/dev-tools/gcp/index.md
+    - GitHub Copilot: labs/dev-tools/github-copilot/index.md
+    - Hugging Face: labs/dev-tools/huggingface/
+    - Java: labs/dev-tools/java/
+    - JMeter Load Testing: labs/dev-tools/jmeter/snowflake-load-testing.md
+    - Kafka: labs/dev-tools/kafka/
+    - Kubernetes: labs/dev-tools/kubernetes/index.md
+    - MCP: labs/dev-tools/mcp/
+    - Microsoft: labs/dev-tools/microsoft/
+    - Mistral: labs/dev-tools/mistral/
+    - NVIDIA: labs/dev-tools/nvidia/
+    - Ollama: labs/dev-tools/ollama/
+    - OpenAI Codex CLI: labs/dev-tools/openai/codex-cli.md
+    - PyPI: labs/dev-tools/pypi/
+    - Python: labs/dev-tools/python/
+    - SchemaChange: labs/dev-tools/schemachange/
+    - SliDev (Slidev): labs/dev-tools/slidev/index.md
+    - Streamlit: labs/dev-tools/streamlit/
+    - Talend: labs/dev-tools/talend/
+    - Terminal CLI: labs/dev-tools/terminal-cli/index.md
+    - Terraform: labs/dev-tools/terraform/index.md
+    - VSCode: labs/dev-tools/vscode/index.md
   - Blog:
     - Overview: labs/blog/index.md
     - Innovation:
